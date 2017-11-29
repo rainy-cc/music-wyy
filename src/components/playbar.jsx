@@ -116,6 +116,10 @@ class PlayBar extends React.Component {
         let index = this.props.currentMusic.index;
         let playlist = this.props.playlist;
         let mode = this.props.playMode;
+        //没有歌曲
+        if(playlist.length == 0){
+            return;
+        }
         //如果当前列表就一首歌
         if(playlist.length == 1){
             this.singlePlay();
