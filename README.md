@@ -1,17 +1,17 @@
 # music-wyy
 使用react+redux构建的网易云首页，个人学习交流作品
-技术栈：`react`+`react-router@2.8`+`redux`+`react-redux`+`webpack`+`axios`  
-##在线访问
+技术：`react`+`react-router@2.8`+`redux`+`react-redux`+`webpack`+`axios`  
+## 在线访问
 [React——网易云音乐](http://music.rainycc.com)  
 推荐使用chrome浏览器  
-##项目运行
+## 项目运行
 ```shell
 $ git clone git@github.com:ForeverCc/music-wyy.git
 $ npm install
 $ npm start
 ```
 浏览器访问localhost：3000（推荐使用chrome）
-###完成页面
+### 完成页面
 1.首页 /
 2.排行榜页面 /discover/toplist
 3.歌单页面 /discover/playlist
@@ -31,12 +31,12 @@ $ npm start
 17.我的音乐页面 /mymusic
 18.朋友页面 /friend
 
-###页面播放器功能
+### 页面播放器功能
 1.播放模式切换，支持随机，循环，单曲三种模式
 2.前进后退切换功能
 3.音量大小控制
 4.歌曲进度控制
 5.本地存储功能locastorage
 
-###项目说明与总结
+### 项目说明与总结
 此网易云音乐项目为个人学习练手项目，使用官方脚手架create-react-app快速搭建，使用react进行UI构建，redux进行状态管理（主要运用在播放器的相关功能上），通过该项目进一步了解react全家桶的使用，页面需要进一步改善，一些bug还需要解决，欢迎各位前端大佬批评指正，也欢迎各位喜欢react的小伙伴一起交流学习;
