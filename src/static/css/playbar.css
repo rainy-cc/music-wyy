@@ -1,0 +1,597 @@
+/*
+    播放功能组件的样式 playbar
+*/
+
+#playbar {
+
+}
+
+.playbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 53px;
+    z-index: 99999;
+}
+
+.playbar_bg {
+    position: relative;
+    height: 47px;
+    padding-left: 67px;
+    margin-right: 67px;
+    padding-top:6px;
+    background: url(../images/playbar.png) repeat-x;
+}
+.playbar .lock_bg {
+    position: absolute;
+    right: 0;
+}
+.playbar .lock_bg .lock {
+    float: left;
+    margin-top: -14px;
+    width: 52px;
+    height: 67px;
+    background: url(../images/playbar.png) no-repeat 0 -380px;
+}
+.playbar .lock_bg .lock .icon_lock {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 0 17px;
+    background: url(../images/playbar.png) no-repeat -100px -380px;
+    cursor: pointer
+}
+.playbar .lock_bg .lock .icon_lock:hover {
+    background-position: -100px -400px;
+}
+.playbar .lock_bg .bg {
+    float: left;
+    width: 15px;
+    height: 53px;
+    background: url(../images/playbar.png) repeat-x;
+}
+.playbar_wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 980px;
+    height: 47px;
+    z-index: 9999; /*层级要比panel高*/
+}
+.playbar .pb_btns{
+    width: 137px;
+    padding: 6px 0 0 0;
+}
+.playbar .pb_btns a {
+    float: left;
+    margin-right: 8px;
+    margin-top: 5px;
+    width: 28px;
+    height: 28px;
+    text-indent: -9999px;
+    background: url(../images/playbar.png) no-repeat;
+}
+.playbar .pb_btns .prev {
+    background-position: 0 -130px;
+}
+.playbar .pb_btns .prev:hover {
+    background-position: -30px -130px;
+}
+
+.playbar .pb_btns .control {
+    width: 36px;
+    height: 36px;
+    margin-top: 0;
+}
+.playbar .pb_btns .pause {
+    background-position: 0 -204px;
+}
+.playbar .pb_btns .pause:hover{
+    background-position:-40px -204px;
+}
+.playbar .pb_btns .play {
+    background-position: 0 -165px;
+}
+.playbar .pb_btns .play:hover{
+    background-position: -40px -165px;
+}
+.playbar .pb_btns .next {
+background-position: -80px -130px;
+}
+.playbar .pb_btns .next:hover {
+    background-position: -110px -130px;
+}
+
+.playbar .pb_avatar {
+    width: 34px;
+    height: 34px;
+    margin: 6px 15px 0 0;
+}
+.playbar .pb_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.playbar .pb_progress {
+    position: relative;
+    width: 608px;
+}
+.playbar .pb_progress .info {
+    height: 28px;
+    overflow: hidden;
+    text-shadow: 0 1px 0 #171717;
+    line-height: 28px;
+}
+.playbar .info .name {
+    max-width: 300px;
+    color: #e8e8e8;
+}
+.playbar .info .mv {
+    width: 19px;
+    height: 17px;
+    margin: 6px 0 0 3px;
+    background: url(../images/playbar.png) no-repeat 0 -57px;
+}
+.playbar .info .mv:hover {
+    background-position: -20px -57px;
+}
+.playbar .info .nickname {
+    max-width: 220px;
+    margin-left: 15px;
+    color: #9b9b9b;
+}
+/*进度条*/
+.playbar .pb_progress .progress {
+    position: relative;
+    width: 493px;
+    height: 9px;
+    background: url(../images/statbar.png) no-repeat right 0;
+}
+.playbar .progress .current {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 9px;
+    background: url(../images/statbar.png) no-repeat left -66px;
+}
+.playbar .progress .point_btn {
+    position: absolute;
+    top: -7px;
+    right: -13px;
+    width: 22px;
+    height: 24px;
+    margin-left: -11px;
+    background: url(../images/iconall.png) no-repeat 0 -250px;
+}
+.playbar .progress .time {
+    position: absolute;
+    right: -80px;
+    top: -3px;
+    color:#797979;
+}
+.playbar .time em{color: #a1a1a1;}
+.playbar .pb_operation{
+    width: 60px;
+}
+.playbar .pb_operation .icon,
+.playbar .pb_control .icon {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 12px 2px 0 0;
+    text-indent: -9999px;
+    background: url(../images/playbar.png) no-repeat;
+    cursor: pointer;
+}
+.playbar .pb_operation .add{
+    background-position: -88px -163px;
+}
+.playbar .pb_operation .add:hover {
+    background-position: -88px -189px;
+}
+.playbar .pb_operation .share{
+    background-position: -114px -163px;
+}
+.playbar .pb_operation .share:hover{
+    background-position: -114px -189px;
+}
+
+.playbar .pb_control {
+    position: relative;
+    z-index: 10;
+    width: 114px;
+    padding-left: 12px;
+    background: url(../images/playbar.png) no-repeat -147px -238px;
+}
+
+.playbar .pb_control .volume {
+    background-position: -2px -248px;
+}
+.playbar .pb_control .volume:hover {
+    background-position: -31px -248px;
+}
+.playbar .pb_control .loop {
+    background-position: -3px -344px;
+}
+.playbar .pb_control .loop:hover{
+    background-position: -33px -344px;
+}
+.playbar .pb_control .single {
+    background-position:-66px -344px;
+}
+.playbar .pb_control .single:hover {
+    background-position: -93px -344px;
+}
+.playbar .pb_control .random {
+    background-position: -66px -248px;
+}
+.playbar .pb_control .random:hover {
+    background-position: -93px -248px;
+}
+.playbar .pb_control .list_btn {
+    position: relative;
+    width: 59px;
+    height: 36px;
+}
+.playbar .pb_control .list_btn .num {
+    display: block;
+    margin-top: 12px;
+    padding-left: 21px;
+    width: 38px;
+    height: 27px;
+    background: url(../images/playbar.png) no-repeat -42px -68px;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+    text-indent: 0;
+    cursor: pointer;
+}
+
+.playbar .pb_control .list_btn .num:hover{
+    background-position: -42px -98px;
+}
+
+.playbar .pb_control .vol_bar {
+    position: absolute;
+    left: 9px;
+    top: -113px;
+    width: 32px;
+    height: 113px;
+    background: url(../images/playbar.png) no-repeat 0 -503px;
+    z-index: 9999;
+}
+.playbar .pb_control .vol_total {
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 4px;
+    height: 92px;
+}
+.playbar .pb_control .vol_current {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    height: 50px;
+    background: url(../images/playbar.png) no-repeat -40px bottom;
+}
+.playbar .ctrl_btn {
+    position: absolute;
+    bottom: 10px;
+    left: -7px;
+    display: block;
+    margin-bottom: -10px;
+    width: 18px;
+    height: 20px;
+    background: url(../images/iconall.png) no-repeat -40px -250px;
+    cursor: pointer;
+}
+.playbar .ctrl_btn:hover {
+    background-position: -40px -280px;
+}
+
+
+
+/*
+    播放面板 panel
+*/
+
+.panel {
+    position: absolute;
+    left: 50%;
+    bottom: 47px;
+    width: 986px;
+    height: 301px;
+    margin-left: -493px;
+    z-index: 999;
+}
+.panel .panel_hd {
+    background: url(../images/playlist_bg.png) no-repeat 0 0;
+    height: 41px;
+    padding: 0 5px;
+}
+.panel .panel_hdwrap {
+    position: relative;
+    height: 40px;
+}
+.panel .panel_hdwrap h4 {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #e2e2e2;
+}
+.panel .panel_hdwrap .value_all,
+.panel .panel_hdwrap .clear_all {
+    position: absolute;
+    left: 490px;
+    top: 12px;
+    height: 15px;
+    line-height: 15px;
+    cursor: pointer;
+    color: #ccc;
+}
+.panel .panel_hdwrap .value_all {
+    left: 398px;
+}
+.panel .panel_hdwrap .line {
+    position: absolute;
+    top: 13px;
+    left: 477px;
+    height: 15px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #2c2c2c;
+}
+.panel .panel_hdwrap .icon {
+    float: left;
+    margin: 0 6px 0 0;
+    width: 16px;
+    height: 16px;
+    background: url(../images/playlist.png) no-repeat;
+}
+.panel .panel_hdwrap .icon_value {
+    background-position: -24px 0;
+}
+.panel .panel_hdwrap .icon_value:hover {
+    background-position: -24px -20px;
+}
+.panel .panel_hdwrap .icon_clear {
+    width: 13px;
+    background-position: -51px 0;
+}
+.panel .panel_hdwrap .icon_clear:hover {
+
+    background-position: -51px -20px;
+}
+.panel .panel_hdwrap .name {
+    position: absolute;
+    left: 595px;
+    top: 0;
+    width: 346px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.panel .panel_hdwrap .close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    text-indent: -999px;
+    cursor: pointer;
+    background: url(../images/playlist.png) no-repeat -195px 10px;
+}
+.panel .panel_hdwrap .close:hover {
+    background-position: -195px -20px;
+}
+
+    /*
+        panel-bd
+    */
+.panel .panel_bd {
+    position: relative;
+    padding: 0 5px;
+    width: 976px;
+    height: 260px;
+    overflow: hidden;
+    background: url(../images/playlist_bg.png) -1014px 0;
+    background-repeat: repeat-y;
+}
+
+.panel .panel_list {
+    position: absolute;
+    left: 2px;
+    top: 0;
+    z-index: 4;
+    height: 260px;
+    width: 553px;
+    overflow: hidden;
+}
+.panel .panel_list .no_content {
+    padding-top: 85px;
+    text-align: center;
+    line-height: 44px;
+    color: #aaa;
+}
+.panel .panel_list .no_content .icon_listen {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    width: 36px;
+    height: 29px;
+    margin-right: 4px;
+    background: url(../images/playlist.png) no-repeat -138px 0;
+    vertical-align: middle;
+}
+.panel .panel_list .no_content a {
+    color: #aaa;
+    text-decoration: underline;
+}
+
+.panel .panel_list ul {
+    position: absolute;
+    width: 100%;
+    top:0;
+}
+.panel .panel_list ul li {
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+.panel .panel_list ul li:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.panel li.active {
+    background-color: rgba(0,0,0,0.3);
+}
+.panel .col {
+    height: 28px;
+    float: left;
+    padding-left: 10px;
+    overflow: hidden;
+}
+.panel .col1 {
+    width: 10px;
+}
+.panel .col1 .play {
+    margin-top: 8px;
+    width: 10px;
+    height: 12px;
+    background: url(../images/playlist.png) no-repeat -182px 0;
+}
+.panel .col2{
+    width: 256px;
+}
+.panel .col3{
+    position: relative;
+    width: 78px;
+}
+.panel .col3 .icons_wrap{
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 2px;
+}
+.panel .col3 .icon{
+    float: left;
+    margin: 4px 8px 0 0;
+    height: 15px;
+    background: url(../images/playlist.png) no-repeat;
+}
+.panel .col3 .icon_value{
+    width: 16px;
+    background-position: -24px 0;
+}
+.panel .col3 .icon_value:hover{
+    background-position: -24px -20px;
+}
+.panel .col3 .icon_share{
+    width: 14px;
+    background-position: 0 0;
+}
+.panel .col3 .icon_share:hover{
+    background-position: 0 -20px;
+}
+.panel .col3 .icon_download{
+    width: 14px;
+    background-position: -57px -50px;
+}
+.panel .col3 .icon_download:hover{
+    background-position: -80px -50px;
+}
+.panel .col3 .icon_delete{
+    width: 13px;
+    background-position: -51px 0;
+}
+.panel .col3 .icon_delete:hover{
+    background-position: -51px -20px;
+}
+.panel .col4{
+    width: 70px;
+}
+.panel .col4 a {
+    color: #fff;
+}
+.panel .col5{
+    width: 35px;
+}
+.panel .col6 {
+    width: 37px;
+    padding-left: 6px;
+}
+.panel .col6 a {
+    display: block;
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 14px;
+    height: 16px;
+    background: url(../images/playlist.png) no-repeat -80px 0px;
+}
+.panel .col6 a:hover{
+    background-position: -80px -20px;
+}
+.panel .lrc {
+    position: absolute;
+    right: 40px;
+    top: 0;
+    z-index: 4;
+    margin: 21px 0 20px 0;
+    height: 219px;
+    width: 354px;
+    overflow: hidden;
+}
+.panel .lrc .lrc_wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 354px;
+}
+.panel .lrc_item {
+    color: #989898;
+    word-wrap: break-word;
+    text-align: center;
+    height: 32px;
+    min-height: 32px;
+    line-height: 32px;
+    height: auto;
+}
+.panel .lrc_item.active {
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.7s linear;
+}
+.panel .scrollbar{
+    position: absolute;
+    left: 555px;
+    top: -1px;
+    z-index: 2;
+    width: 6px;
+    height: 260px;
+    background: #000;
+    opacity: .5;
+}
+.panel .scrollbar1{
+    left: auto;
+    right: 2px;
+}
+.panel .scrollbar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 4px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid #a6a6a6;
+    background: #868686;
+    cursor: pointer;
+}

@@ -1,0 +1,161 @@
+/*
+    电台节目页面样式
+ */
+
+.pro_ctx {
+
+    width: 709px;
+
+}
+.pro_ctx_wrap {
+    padding: 43px 30px 40px 39px;
+}
+.pro_ctx .info {
+    margin-bottom: 20px;
+}
+.pro_ctx .info .avatar {
+    padding: 3px;
+    border: 1px solid #d5d5d5;
+}
+.pro_ctx .info .avatar img {
+    display: block;
+    width: 140px;
+    height: 140px;
+}
+.pro_ctx .text {
+    margin-left: 170px;
+    padding-top: 15px;
+}
+.pro_ctx .text .title {
+    margin-bottom: 30px;
+}
+
+.pro_ctx .text .title h2 {
+    margin-left: 80px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.pro_ctx .radioname {
+    height: 28px;
+    line-height: 29px;
+}
+.pro_ctx .radioname i {
+    float: left;
+    margin: 6px 8px 0 0;
+    width: 16px;
+    height: 17px;
+    background: url(../images/icon2.png) no-repeat  -50px -20px;
+}
+.pro_ctx .radioname .name {
+    float: left;
+    margin-right: 15px;
+    font-size: 16px;
+    color: #666;
+}
+.pro_ctx .radioname .btn_sub {
+    float: left;
+}
+
+.pro_ctx .more .more_info {
+    height: 36px;
+    line-height: 36px;
+}
+.pro_ctx .more .more_info .tag {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 6px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.pro_ctx .more .more_info strong {
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.pro_ctx .more .more_info .time,
+.pro_ctx .more .more_info .num {
+    margin-right: 10px;
+    color: #999;
+}
+
+.pro_ctx .more .more_info em {
+    color: #cc0000;
+    font-weight: 700;
+}
+.pro_ctx .more .desc {
+    line-height: 24px;
+    color: #666;
+}
+
+
+
+
+.pro_ctx .list .tb_head {
+    height: 32px;
+    padding: 0 10px;
+    margin-bottom: -1px;
+    overflow: hidden;
+    background: #f7f7f7;
+    border: 1px solid #d9d9d9;
+    line-height: 33px;
+}
+.pro_ctx .sl_table .col1 {
+    width: 54px;
+}
+.pro_ctx .sl_table .col2 {
+    width: 238px;
+}
+.pro_ctx .sl_table .col3,
+.pro_ctx .sl_table .col4 {
+    width: 70px;
+}
+
+.pro_ctx .sl_table .col5 {
+
+}
+
+
+.g_side .more_program h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.more_program .more_program_list li {
+    margin-bottom: 15px;
+}
+.more_program .more_program_list .avatar {
+    float: left;
+    width: 50px;
+    height: 50px;
+
+}
+
+.more_program .more_program_list .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.more_program .more_program_list .info {
+    margin-left: 60px;
+    line-height: 25px;
+    color: #999;
+}
+.more_program .more_program_list .info .name {
+    font-size: 14px;
+    color: #000;
+
+}

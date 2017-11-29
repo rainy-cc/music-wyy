@@ -1,0 +1,149 @@
+/*
+    新碟详情页的样式
+*/
+
+.albd_ctx {
+    width: 709px;
+}
+
+.albd_ctxwrap {
+    padding: 43px 30px 40px 39px;
+}
+
+.album_detail .albd_info .avatar {
+    position: relative;
+    width: 177px;
+    height: 177px;
+}
+
+.album_detail .albd_info .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.album_detail .albd_info .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 209px;
+    height: 177px;
+    background: url(../images/coverall.png) no-repeat 0 -986px;
+}
+
+.album_detail .albd_info .text {
+    width: 410px;
+}
+
+.album_detail .albd_info .about {
+    margin-bottom: 20px;
+}
+
+.album_detail .albd_info .title {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.album_detail .albd_info .intro {
+    margin-top: 4px;
+    line-height: 18px;
+    color: #666;
+}
+
+.album_detail .albd_info .title h2 {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/*
+    专辑介绍
+*/
+
+.album_detail .albd_desc {
+    margin-top: 20px;
+}
+
+.album_detail .albd_desc strong {}
+
+.album_detail .albd_desc .desc p {
+    color: #666;
+    text-indent: 2em;
+    line-height: 24px;
+    margin-top: 4px;
+}
+
+.album_detail .open a {
+    position: relative;
+    float: right;
+    color: #0c73c2;
+    padding-right: 12px;
+}
+
+.album_detail .open .arrow {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 11px;
+    height: 8px;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+
+.album_detail .open .arrow_up {
+    background-position: -45px -520px;
+}
+
+.album_detail .other_album {}
+
+.album_detail .other_album h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+/*热门专辑*/
+.album_detail .other_album {
+    margin-bottom: 25px;
+}
+
+.album_detail .other_album h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+
+.other_album .list li {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.other_album .list .avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.other_album .list .avatar a, .other_album .list .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.other_album .info {
+    margin-left: 60px;
+}
+
+.other_album .info p {
+    width: 140px;
+    height: 24px;
+    overflow: hidden;
+}

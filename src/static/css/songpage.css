@@ -1,0 +1,149 @@
+/*
+    单曲页面的样式
+ */
+
+
+.song_ctx {
+    position: relative;
+    width: 709px;
+}
+.song_ctx .wrap {
+    padding: 43px 30px 40px 39px;
+}
+
+
+
+.song_info {
+
+}
+.song_info .img_avatar {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    padding: 38px;
+
+}
+.song_info .img_avatar .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 206px;
+    height: 206px;
+    background: url(../images/coverall.png) no-repeat -140px -580px;
+}
+.song_info .img_avatar img {
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+
+.song_info .detail {
+    width: 414px;
+}
+.song_info .hd .icon_dq {
+    float: left;
+    margin-top: 5px;
+    width: 54px;
+    height: 24px;
+    background: url(../images/icon.png) no-repeat 0 -463px;
+}
+.song_info .hd .title {
+    margin-left: 64px;
+}
+.song_info .hd h2 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.song_info .hd .subtitle {
+    margin: 1px 0 5px;
+    color: #bababa;
+    font-size: 14px;
+}
+
+.song_info .detail .author,
+.song_info .detail .belong {
+    color: #999;
+    margin: 10px 0;
+}
+.song_info .detail .author a,
+.song_info .detail .belong a{
+    color: #0c73c2;
+}
+.song_info .detail .lrc {
+
+}
+.song_info .detail .lrc_line {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+}
+.song_info .detail .lrc_linehide {
+    display: none;
+}
+.lrc  .open a {
+    position: relative;
+    float: left;
+    color: #0c73c2;
+    padding-right: 12px;
+}
+.lrc .open .arrow {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 11px;
+    height: 8px;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+.lrc .open .arrow_up {
+    background-position: -45px -520px;
+}
+
+
+/*
+    歌曲页面相似歌曲样式
+ */
+.simi_songs {
+
+}
+.simi_songs h5{
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.simi_songs .simi_list li {
+
+    margin-bottom: 10px;
+
+}
+.simi_songs .text{
+    float: left;
+    width: 156px;
+    line-height: 16px;
+}
+.simi_songs .text .author {
+    color: #999;
+}
+.simi_songs .btn_box{
+    float: right;
+    position: relative;
+    top: 10px;
+    line-height: 32px;
+}
+.simi_songs .btn_box a {
+    float: left;
+    width: 10px;
+    height: 11px;
+    background: url(../images/icon2.png) no-repeat ;
+    opacity: 0.9;
+}
+.simi_songs .btn_box .play {
+    margin-right: 15px;
+    background-position: -69px -455px;
+}
+.simi_songs .btn_box .add {
+    background-position: -87px -454px;
+}

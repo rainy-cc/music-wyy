@@ -1,0 +1,44 @@
+//自定义的网易云banner数据
+const bannerApi = [
+    {
+        picUrl:'http://p1.music.126.net/36fSZbvg6e_lZOJUQCjYoQ==/18541064581289517.jpg',
+        bgUrl:'http://p1.music.126.net/MYV4C-BiGk2AS2B_0Ppc-w==/19153492556286950.jpg',
+        linkUrl:'http://music.163.com/store/newalbum/detail?id=36681095',
+    },
+    {
+        picUrl:'http://p1.music.126.net/OynN6AnHv9S85hqQtSTs0g==/18577348465009263.jpg',
+        bgUrl:'http://p1.music.126.net/jgaH2Rnj5Xel_C8PsAkEBQ==/18541064581289491.jpg',
+        linkUrl:'https://music.163.com/store/newalbum/detail?id=36679143',
+    },
+    {
+        picUrl:'http://p1.music.126.net/ltkGk-HOmTiTwaiXoBgMmA==/18577348465009290.jpg',
+        bgUrl:'http://p1.music.126.net/duwy9fJ3jn3ZPPtktco4Og==/18612532837047248.jpg',
+        linkUrl:'http://music.163.com/#/song?id=516776413',
+    },
+    {
+        picUrl:'http://p1.music.126.net/mZqAZ_WRohvkypdZPAs2YA==/18495984604544627.jpg',
+        bgUrl:'http://p1.music.126.net/Htx_vrfOf4LCb_rmT8mT5Q==/18980869230703849.jpg',
+        linkUrl:'http://music.163.com/#/song?id=516657051',
+    },
+    {
+        picUrl:'http://p1.music.126.net/kDXfWJ_F52X2T2_TUsxjsQ==/18657612813802698.jpg',
+        bgUrl:'http://p1.music.126.net/j9Ys2jgtEnpooJwCrhFZXg==/18980869230703848.jpg',
+        linkUrl:'http://music.163.com/#/topic?id=18617110'
+    },
+    {
+        picUrl:'http://p1.music.126.net/nafhw3VpQ7bchSbo-UXjig==/18637821604576413.jpg',
+        bgUrl:'http://p1.music.126.net/_EjnE8n1tQQFKMqqLGVXuQ==/19145795974892439.jpg',
+        linkUrl:'http://music.163.com/#/topic?id=18651135'
+    },
+    {
+        picUrl:'http://p1.music.126.net/G66K9J2Y76NEINudXtHkpg==/19145795974887974.jpg',
+        bgUrl:'http://p1.music.126.net/C1TyCS51PefqZnxwIu959Q==/19022650672576020.jpg',
+        linkUrl:'http://music.163.com/#/album?id=36726020'
+    },
+    {
+        picUrl:'http://p1.music.126.net/ClmDWcYSnKR-AFV-Lk9KFw==/19012755067930569.jpg',
+        bgUrl:'http://p1.music.126.net/wbx2t6n_532S4-mckeP5Ww==/18614731860348538.jpg',
+        linkUrl:'http://music.163.com/#/album?id=36679209'
+    }
+];
+  export { bannerApi };

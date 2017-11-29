@@ -1,0 +1,204 @@
+/*
+    歌单详情页面的样式
+*/
+
+/*左侧内容*/
+.pld_ctx {
+    width: 709px;
+}
+.pld_ctx_wrap {
+    padding: 43px 30px 40px 39px;
+}
+.pld_ctx .img_avatar {
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin-left: -3px;
+    border: 1px solid #ccc;
+}
+.pld_ctx .img_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pld_ctx .ctx {
+    padding-top: 4px;
+    margin-left: 230px;
+}
+
+.pl_detail .ctx .title {
+    position: relative;
+    margin: 0 0 12px;
+    line-height: 24px;
+}
+
+.pl_detail .ctx .title h2 {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.pl_detail .ctx .author {
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.pl_detail .ctx .author a.avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.pl_detail .ctx .author a.avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pl_detail .ctx .author a.name{
+    color: #0c73c2;
+}
+.pl_detail .ctx .author .icon {
+    margin: 9px 10px 0 3px;
+    width: 12px;
+    height: 13px;
+    background:  url(../images/icon.png) no-repeat  -65px -840px;
+}
+.pl_detail .tags {
+    height: 22px;
+    line-height: 22px;
+}
+.pl_detail .tags span {
+    float: left;
+    color: #666;
+    margin-right: 5px;
+}
+.pl_detail .tags .tag {
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    color: #666;
+}
+.pl_detail .tags .tag:hover {
+    text-decoration: none;
+    background-color: #fff;
+}
+.pl_detail .intro {
+    margin-top: 4px;
+    line-height: 20px;
+    color: #666;
+}
+.pl_detail .intro .open a {
+    position: relative;
+    float: right;
+    color: #0c73c2;
+    padding-right: 12px;
+}
+.pl_detail .intro .open .arrow {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 11px;
+    height: 8px;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+.pl_detail .intro .open .arrow_up {
+    background-position: -45px -520px;
+}
+/*侧边栏*/
+.pld_side {
+    position: relative;
+    width: 270px;
+}
+.pld_side .pld_sd_wrap {
+    padding: 20px 35px 40px 35px;
+}
+.pld_side .ad {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 30px;
+}
+.pld_side .ad a,
+.pld_side .ad img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*
+    热门推荐
+*/
+.pld_side .blk_hotlist {
+    margin-bottom: 25px;
+}
+.pld_side .blk_hotlist h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.pld_side .hotlist {
+
+}
+.pld_side .hotlist li {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.pld_side .hotlist .avatar {
+    width: 50px;
+    height: 50px;
+}
+.pld_side .hotlist .avatar a,
+.pld_side .hotlist .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pld_side .info {
+    margin-left: 60px;
+}
+.pld_side .info p {
+    width: 140px;
+    height: 24px;
+    overflow: hidden;
+}
+.pld_side .by {
+    color: #999;
+}
+.pld_side .name {
+    max-width: 106px;
+    margin: 0 2px 0 4px;
+    color: #666;
+}
+.pld_side .icon {
+    width: 12px;
+    height: 13px;
+    margin: 4px 0 0 2px;
+    background: url(../images/icon.png) no-repeat -65px -840px;
+}
+
+.pld_table tr:hover .t_btns {
+	display: block;
+    margin-right: -10px;
+}
+.pld_table tr:hover .time {
+	display: none;
+}
+.pld_table .mv_btn {
+    display: inline-block;
+    margin-left: 2px;
+    width: 23px;
+    height: 17px;
+    vertical-align: middle;
+    background: url(../images/table.png) no-repeat 0 -151px;
+}
+.pld_table .mv_btn:hover {
+    background-position: -30px -151px;
+}

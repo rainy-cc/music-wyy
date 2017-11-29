@@ -1,0 +1,222 @@
+/*
+    网易云用户信息页样式
+    uh: userhome
+*/
+
+.userhome {}
+
+.uh_wrap {
+    padding: 40px;
+}
+
+.userhome .uh_info {
+    margin-bottom: 40px;
+}
+
+.userhome .uh_avatar {}
+
+.userhome .uh_info img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d5d5d5;
+}
+
+.userhome .uh_info_detail {
+    margin-left: 40px;
+    width: 670px;
+}
+
+.userhome .about {
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.userhome .about h2 {
+    padding-top: 4px;
+}
+
+.userhome .about .nickname {
+    float: left;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.userhome .about .level {
+    float: left;
+    height: 19px;
+    overflow: hidden;
+    margin: 5px 0 0 8px;
+    padding-left: 29px;
+    line-height: 21px;
+    color: #e03a24;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    background: url(../images/icon2.png) no-repeat -135px -190px;
+}
+
+.userhome .about .level i {
+    float: right;
+    width: 9px;
+    height: 19px;
+    background: url(../images/icon2.png) no-repeat -191px -190px;
+}
+
+.userhome .about .icon_sex {
+    float: left;
+    margin: 5px 0 0 8px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon.png) no-repeat;
+}
+.userhome .about .icon_woman {
+    background-position:  -41px -27px;
+}
+.userhome .about .icon_man {
+    background-position: -41px -57px;
+}
+.userhome .about .tag {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.userhome .about .tag i {
+    float: left;
+    margin-right: 6px;
+    width: 68px;
+    height: 20px;
+    background: url(../images/icon2.png) no-repeat ;
+}
+.userhome .about .tag i.vrz {
+    background-position: 0 -480px;
+}
+.userhome .about .tag i.daren {
+    background-position: -75px -480px;
+}
+.userhome .about .hd_btns {}
+
+.userhome .about .hd_btn {
+    float: left;
+    margin: 4px 0 0 15px;
+}
+
+.userhome .about .hd_btn span {
+    display: inline-block;
+    height: 29px;
+    line-height: 29px;
+    padding-left: 30px;
+}
+
+.userhome .about .hd_btn1 {
+    width: 75px;
+    height: 31px;
+    background: url(../images/button.png) no-repeat 0 -810px;
+}
+
+.userhome .about .hd_btn2 {
+    width: 40px;
+    height: 31px;
+    padding-left: 30px;
+    background: url(../images/button.png) no-repeat 0 -720px;
+    color: #fff;
+    line-height: 31px;
+}
+
+.userhome .more_info {
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: #666;
+}
+
+
+/*用户创建的电台*/
+.userhome .uh_dt {
+    margin-bottom: 20px;
+}
+.userhome .uh_title {
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.userhome .uh_title h3 {
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+}
+.userhome .uh_dtlist {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+}
+.userhome .uh_dtlist li {
+    height: 50px;
+    padding: 10px 0;
+    line-height: 50px;
+}
+.userhome .uh_dtlist li:hover {
+    background-color: #eeeeee;
+}
+.userhome .uh_dtlist .dt_avatar {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+.userhome .dt_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.userhome .uh_dtlist .dt_name {
+    position: relative;
+    width: 500px;
+    padding-right: 38px;
+    margin-left: 10px;
+}
+
+.userhome .dt_name .icon_share {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    background: url(../images/icon2.png) no-repeat -91px 0;
+    cursor: pointer;
+}
+.userhome .dt_name .icon_share:hover {
+    background-position: -91px -20px;
+}
+.userhome .uh_dtlist .dt_dy {
+    width: 216px;
+    margin-left: 10px;
+    color: #666;
+}
+.userhome .uh_dtlist .dt_num {
+    width: 44px;
+    margin-left: 10px;
+    color: #999;
+}
+
+/*用户创建收藏歌单*/
+.userhome .uh_sllist {
+    margin: 20px 0 0 -50px;
+}
+.userhome .uh_sllist li {
+    float: left;
+    padding: 0 0 30px 50px;
+    width: 140px;
+    height: 165px;
+    overflow: hidden;
+}
+.userhome .uh_sllist .desc {
+    margin: 8px 0 3px;
+    line-height: 20px;
+    font-size: 14px;
+}

@@ -1,0 +1,71 @@
+#footer {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    border-top: 1px solid #d3d3d3;
+    background: #f2f2f2;
+}
+
+.ft_wrap {
+    width: 980px;
+    margin: 0px auto;
+}
+.ft_l {
+
+width: 490px;
+padding-top: 35px;
+line-height: 24px;
+}
+
+.ft_links {
+
+}
+.ft_links a {
+    float: left;
+    color: #999;
+}
+.ft_links span {
+    float: left;
+    margin: 0 10px;
+    color: #c2c2c2;
+}
+
+.ft_r {
+    width: 330px;
+margin-top: 21px;
+}
+.ft_r a {
+    float: left;
+    width: 60px;
+    height: 70px;
+    background: url(../images/footer/foot_enter.png) no-repeat;
+    text-indent: -9999px;
+}
+.ft_r a+a {
+    margin-left: 30px;
+}
+
+.ft_copyright {
+    color: #666;
+}
+.ft_copyright .copyright{
+    float: left;
+    margin-right: 12px;
+}
+.ft_copyright a:hover {
+    text-decoration: underline;
+}
+.ft_r a:nth-last-of-type(1){
+    background-position: -60px 0px;
+
+}
+.ft_r a:nth-last-of-type(2){
+    background-position: 0px 0px;
+
+}
+.ft_r a:nth-last-of-type(3){
+    background-position: 0px -80px;
+}
+.ft_r a:nth-last-of-type(4){
+    background-position: -60px -80px;
+}

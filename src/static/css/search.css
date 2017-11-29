@@ -1,0 +1,460 @@
+/*
+    搜索页面的样式
+ */
+
+.w370 {
+    width: 370px;
+}
+.w79 {
+    width: 79px;
+}
+.w130 {
+    width: 130px;
+}
+
+.w160 {
+    width: 160px;
+}
+
+.search .sch_box {
+    position: relative;
+    width: 420px;
+    height: 40px;
+    margin: 0 auto;
+    background: url(../images/others.png) no-repeat 0 0;
+    z-index: 10;
+}
+
+.search input {
+    float: left;
+    width: 320px;
+    height: 17px;
+    margin: 12px 0 0 20px;
+    padding: 0;
+    background: #fff;
+    border: none;
+}
+
+.search .sch_btn {
+    float: right;
+    width: 50px;
+    height: 40px;
+}
+
+.search .sch_btn:hover {
+    text-decoration: none;
+    background: url(../images/others.png) no-repeat -430px 0;
+}
+
+.search .search_list {
+    width: 420px;
+}
+
+.search .sch_info {
+    margin: 24px 0 18px 0;
+    color: #666;
+}
+
+.search .sch_info em {
+    color: #c20c0c;
+}
+
+
+/* sch_tab导航 */
+
+.search .sch_tab {
+    height: 39px;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    background: url(../images/artist/tab.png) repeat-x 0 0;
+}
+
+.search .sch_tab li {
+    position: relative;
+    left: -1px;
+    width: 112px;
+}
+
+.search .sch_tab li, .search .sch_tab a, .search .sch_tab span {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.search .sch_tab a {
+    padding-left: 2px;
+}
+
+.search .sch_tab a:hover {
+    background: url(../images/artist/tab.png) no-repeat -5px -45px;
+}
+
+.search .sch_tab a.active {
+    background: url(../images/artist/tab.png) no-repeat left -90px;
+}
+
+.search .sch_tab span {
+    height: 37px;
+    width: 108px;
+    padding: 2px 2px 0 0;
+    line-height: 37px;
+}
+
+.search .sch_tab a:hover span {
+    background: url(../images/artist/tab.png) no-repeat right -45px;
+}
+
+.search .sch_tab a.active span {
+    background: url(../images/artist/tab.png) no-repeat right -90px;
+}
+
+.search .sch_result {
+    padding-top: 20px;
+}
+
+.search .sch_song_list {
+
+}
+
+.search .sch_song_list .item {
+    padding: 10px 0 10px 18px;
+    border: 1px solid #fff;
+    line-height: 18px;
+}
+.search .sch_song_list .t_btns  {
+    display: none;
+}
+.search .sch_song_list .item:hover .t_btns {
+    display: block;
+}
+.search .sch_song_list .column {
+    float: left;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.search .sch_song_list .column .play {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/table.png) no-repeat 0 -103px;
+}
+
+.search .sch_song_list .column .play:hover {
+    background-position: 0 -128px;
+}
+
+
+/*
+    歌手搜索结果
+ */
+
+.search .sch_singer_list {
+    margin: 0 0 0 -24px;
+}
+
+.search .sch_singer_list li {
+    float: left;
+    width: 130px;
+    height: 154px;
+    padding-left: 24px;
+    padding-bottom: 30px;
+}
+/*
+    歌单抖索结果
+ */
+.search .play_list {
+
+}
+.search .play_list li {
+    padding: 5px 0;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.search .play_list li.even {
+    background: #f7f7f7;
+}
+.search .play_list li:hover{
+    background: #f2f2f2;
+}
+.search .play_list .column {
+    float: left;
+}
+.search .play_list .col1 {
+    width: 46px;
+}
+.search .play_list .col1 i {
+    display: inline-block;
+    margin: 15px 0 0 10px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background:url(../images/table.png) 0 -103px;
+}
+.search .play_list .col2 {
+    padding:  0 10px;
+    width: 50px;
+}
+.search .play_list .col3 {
+    padding:  0 10px;
+    width: 320px;
+}
+.search .play_list .col4 {
+    width: 35px;
+    padding-left: 25px;
+}
+.search .play_list .col5 {
+    padding:  0 10px;
+    width: 160px;
+}
+.search .play_list .col6,.search .play_list .col7 {
+    padding:  0 10px;
+    width: 78px;
+}
+
+/*
+    用户搜索结果
+ */
+
+.search .user_list {}
+
+.search .user_list li {
+    padding: 5px;
+    height: 50px;
+}
+
+.search .user_list li.even, .search .user_list li:hover {
+    background: #f7f7f7;
+}
+
+.search .user_list .column {
+    float: left;
+    padding: 0 10px;
+}
+
+.search .user_list .col1 {
+    width: 50px;
+}
+
+.search .user_list .col2 {
+    width: 460px;
+}
+
+.search .user_list .col3 {
+    width: 96px;
+}
+
+.search .user_list .col4, .search .user_list .col5 {
+    width: 90px;
+    line-height: 50px;
+    color: #999;
+}
+.search .user_list .avatar,
+.search .user_list img {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+.search .user_list .username {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.search .user_list .icon_gender, .search .dj_list .icon_gender {
+    display: inline-block;
+    margin-left: 5px;
+    width: 14px;
+    height: 15px;
+    background: url(../images/icon.png) -70px -20px;
+    vertical-align: middle;
+}
+.search .user_list .icon_gender_girl {
+    background-position: -70px 0;
+}
+.search .user_list .desc {
+    margin-top: 5px;
+    color: #999;
+}
+
+.search .user_list .btn_watch {
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 26px;
+    width: 40px;
+    height: 27px;
+    background: url(../images/button.png) no-repeat 0 -990px;
+    line-height: 27px;
+}
+
+.search .user_list .btn_watch:hover {
+    text-decoration: none;
+    background-position: 0 -1020px;
+}
+
+
+/*
+    主播搜索结果
+ */
+
+.search .hd {
+    padding: 8px 0 6px;
+    border-bottom: 1px solid #dadada;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+.search .dj_list {
+    margin: 16px 0 0 -37px;
+}
+
+.search .dj_list li {
+    float: left;
+    margin: 0 0 40px 37px;
+    width: 150px;
+}
+.search .dj_list .avatar,
+.search .dj_list img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.search .dj_list .name {
+    margin: 8px 0 3px;
+    line-height: 18px;
+    font-size: 14px;
+}
+.search .dj_list .author {
+    height: 18px;
+}
+.search .dj_list .author .by {
+    color: #999;
+    margin-right: 5px;
+}
+
+.search .lyric_list .lyric {
+    margin: 10px 0 18px 52px;
+    color: #666;
+    line-height: 24px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.search .lyric_list .lyric .ctrl {
+    margin-top: 5px;
+}
+
+.search .lyric_list .lyric .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 11px;
+    height: 8px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url(../images/icon.png) no-repeat -65px -520px;
+}
+
+.search .lyric_list .lyric .arrow_up {
+    background-position: -45px -520px;
+}
+
+.search .lyric_list .lyric b {
+    font-weight: normal;
+    color: #0c73c2;
+}
+
+.search .lyric_list .lyric .lrc_linehide {
+    display: none;
+}
+
+
+/*
+    mv搜索结果
+ */
+
+.search .mv_list {
+    margin-left: -26px;
+}
+
+.search .mv_list li {
+    float: left;
+    padding: 0 0 40px 26px;
+    width: 159px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.search .mv_list .cover {
+    position: relative;
+    zoom: 1;
+    width: 159px;
+    height: 90px;
+}
+
+.search .mv_list img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.search .mv_list .playcount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 5px;
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+    box-sizing: border-box;
+    text-align: right;
+    color: #fff;
+    background: url(../images/mask.png);
+}
+
+.search .mv_list .mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.search .mv_list .icon_camera {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: -2px 4px;
+    width: 15px;
+    height: 10px;
+    background: url(../images/icon2.png) -60px -310px;
+}
+
+.search .mv_list .duration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 5px;
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+    line-height: 20px;
+    color: #fff;
+    background: url(../images/mask.png) 0 -25px;
+}
+
+.search .mv_list .mv_name {
+    margin: 8px 0 3px;
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.search .mv_list .mv_author a {
+    color: #666;
+}

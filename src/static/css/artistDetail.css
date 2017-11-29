@@ -1,0 +1,263 @@
+/*
+    歌手详情页面的样式
+        art
+*/
+
+.art_ctx {
+    width: 709px;
+}
+
+.art_ctxwrap {
+    padding: 25px 30px 40px 39px;
+}
+
+.artist_detail .info {
+
+}
+.artist_detail .info h2 {
+    height: 34px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: normal;
+}
+.artist_detail .info .name {
+    float: left;
+    max-width: 75%;
+}
+.artist_detail .info .s_name {
+    float: left;
+    margin-left: 10px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #999;
+}
+.artist_detail .avatar_bg {
+    position: relative;
+    width: 640px;
+    height: 300px;
+}
+.artist_detail .info img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.artist_detail .info .mask {
+    position: absolute;
+    width: 640px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    background: url(../images/ban_mask.png) no-repeat;
+}
+.artist_detail .info .home {
+    position: absolute;
+    right: 116px;
+    bottom: 18px;
+    width: 96px;
+    height: 32px;
+    background: url(../images/iconall.png) no-repeat 0 -1156px;
+}
+.artist_detail .info .home:hover {
+    background-position: 0 -1196px;
+}
+.artist_detail .info .value {
+    position: absolute;
+    right: 20px;
+    bottom: 18px;
+    width: 76px;
+    height: 32px;
+    background: url(../images/iconall.png) no-repeat 0 -500px;
+}
+.artist_detail .info .value:hover {
+    background-position: 0 -540px;
+}
+/* tab导航 */
+.artist_detail .tab {
+    height: 39px;
+    border: 1px solid #ccc;
+    border-width: 0 1px;
+    background: url(../images/artist/tab.png) repeat-x 0 0;
+}
+.artist_detail .tab li {
+    position: relative;
+    left: -1px;
+    width: 138px;
+}
+.artist_detail .tab li,.artist_detail .tab a ,.artist_detail .tab span{
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 14px;
+}
+.artist_detail .tab a  {
+    padding-left: 2px;
+}
+
+.artist_detail .tab a:hover {
+    background: url(../images/artist/tab.png) no-repeat -5px -45px;
+}
+.artist_detail .tab a.active {
+    background: url(../images/artist/tab.png) no-repeat left -90px;
+}
+.artist_detail .tab span {
+    height: 37px;
+    width: 134px;
+    padding: 2px 2px 0 0;
+    line-height: 37px;
+}
+.artist_detail .tab a:hover span {
+    background: url(../images/artist/tab.png) no-repeat right -45px;
+}
+.artist_detail .tab a.active span{
+    background: url(../images/artist/tab.png) no-repeat right -90px;
+}
+
+/*
+    歌曲列表  无表头
+*/
+.artist_detail .artd_table .column1 {
+    width: 74px;
+}
+.artist_detail .artd_table .column3 {
+        width: 70px;
+}
+.artist_detail .artd_table .column4 {
+    width: 20%;
+}
+.artist_detail .artd_table .column5 {
+    width: 120px;;
+}
+.artist_detail .artd_table .name {
+    padding-right: 25px;
+    position: relative;
+}
+.artist_detail .artd_table .name a.text {
+    float: left;
+    max-width: 120px;
+}
+.artist_detail .artd_table .mv_btn {
+    /*position: absolute;
+    right: 0;
+    top: 0;*/
+    width: 23px;
+    height: 18px;
+    background: url(../images/toplist/table.png) no-repeat 0 -151px;
+    cursor: pointer;
+}
+.artist_detail .progress {
+    width: 100px;
+    height: 8px;
+    border-radius: 4px;
+    background: #dedede;
+}
+.artist_detail .progress span {
+    display: block;
+    width: 50px;
+    height: 8px;
+    border-radius: 4px;
+    background: #c4c4c4;
+}
+
+.artist_detail .mvlist {
+    margin: 20px 0 0 -29px;
+}
+.artist_detail .mvlist li {
+    float: left;
+    width: 137px;
+    height: 140px;
+    padding-left: 29px;
+}
+.artist_detail .mvlist .bg,.artist_detail .mvlist img  {
+    position: relative;
+    display: block;
+    width: 137px;
+    height: 103px;
+
+}
+.artist_detail .mvlist .icon_play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    margin: -22px 0 0 -22px;
+    background: url(../images/iconall.png) no-repeat -30px -135px;
+}
+.artist_detail .mvlist .icon_play:hover {
+    background-position: -30px -85px;
+}
+.artist_detail .mvlist .mvname {
+    padding: 5px 0;
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+}
+.artist_detail .intro {
+
+}
+.artist_detail .intro h2 {
+    margin: 28px 0 8px 0;
+    color: #333;
+    font-size: 14px;
+}
+.artist_detail .intro p {
+    line-height: 25px;
+color: #666;
+
+}
+.artist_detail .intro p.indent {
+    text-indent: 2em;
+}
+.artist_detail .album_list {
+    margin: 20px 0 0 -18px;
+}
+.artist_detail .album_list li {
+    float: left;
+    width: 145px;
+    height: 175px;
+    padding-left: 18px;
+}
+.artist_detail .album_list .imgwrap {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+.artist_detail .album_list .imgwrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.artist_detail .album_list .imgwrap .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    height: 120px;
+    background: url(../images/coverall.png) no-repeat -170px -850px;
+}
+.artist_detail .album_list .imgwrap .icon_play {
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 28px;
+    height: 28px;
+    z-index: 3;
+    cursor: pointer;
+    background: url(../images/iconall.png) no-repeat 0 -140px;
+}
+.artist_detail .album_list li:hover .icon_play{
+    display: block;
+}
+.artist_detail .album_list .imgwrap .icon_play:hover {
+    background-position: 0 -170px;
+}
+.artist_detail .album_list li .name {
+    margin: 8px 0 4px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.artist_detail .album_list li .time {
+    color: #666;
+}

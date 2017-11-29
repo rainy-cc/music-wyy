@@ -1,0 +1,123 @@
+/*
+    轮播图  区域
+*/
+#banner {}
+
+.bn_wrap {
+    position: relative;
+    width: 982px;
+    height: 336px;
+    margin: 0 auto;
+}
+/*
+    轮播图的样式
+*/
+.bn_carousel {
+    position: relative;
+    width: 730px;
+    height: 336px;
+}
+.bn_c_wrap {
+    position: relative;
+    width: 730px;
+    height: 336px;
+}
+.bn_carousel a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
+    transition:none;
+}
+.bn_carousel a.active {
+    z-index: 20;
+    opacity: 1;
+    transition: 1s ease-out ;
+}
+.bn_carousel img {
+    display: block;
+    width: 730px;
+    height: 336px;
+}
+/*
+    左右切换箭头
+*/
+.bn_btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    width: 37px;
+    height: 64px;
+    background: url(../images/banner/banner.png) no-repeat;
+}
+.bn_btn:hover {
+    background-color: rgba(0,0,0,0.3);
+
+}
+.bn_btn_l {
+    left: -68px;
+    background-position: 0 -360px;
+}
+.bn_btn_r {
+    right: -68px;
+    background-position: 0 -508px;
+}
+/*
+    点的样式
+*/
+.bn_car_dots{
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 730px;
+    height: 20px;
+    text-align: center;
+    z-index: 30;
+}
+.bn_car_dots span {
+    display: inline-block;
+    background: #d8e4d8;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bn_car_dots span:hover {
+    background: #bc0b0b;
+}
+.bn_car_dots span.active {
+    background: #bc0b0b;
+}
+/*
+    下载按钮
+*/
+.bn_download {
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    right: -1px;
+    width: 254px;
+    height: 336px;
+    background: url(../images/banner/download.png) no-repeat;
+}
+
+.bn_download .bn_download_btn {
+    display: block;
+    width: 215px;
+    height: 56px;
+    margin: 212px 0 0 19px;
+    text-indent: -9999px;
+}
+.bn_download .bn_download_btn:hover{
+    background: url(../images/banner/download.png) no-repeat 0 -340px;
+}
+
+.bn_download p {
+    margin: 10px auto;
+    text-align: center;
+    color: #8d8d8d;
+}

@@ -1,0 +1,138 @@
+/*
+    一些图标的样式
+*/
+.icon {
+    background: url(../images/icon.png) no-repeat;
+}
+.icon2 {
+    background: url(../images/icon2.png) no-repeat;
+}
+
+/*header*/
+.icon_hot {
+    position: absolute;
+    top: 20px;
+    right: -18px;
+    width: 26px;
+    height: 13px;
+    background: url(../images/topbar.png) no-repeat -192px 0;
+}
+.hd_icon {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin: 10px 15px 0 15px;
+    background: url(../images/toplist.png) no-repeat;
+}
+.icon_mobile {
+    background-position: 0 0;
+}
+.icon_wechat {
+    background-position: -20px -20px;
+}
+.icon_qq{
+    background-position: -20px -40px;
+}
+.icon_sina {
+    background-position: 0 -20px;
+}
+.icon_wyyx {
+    background-position: 0 -40px;
+}
+
+
+/*一些播放按钮*/
+.icon_earphone {
+    float: left;
+    width: 14px;
+    height: 11px;
+    background: url(../images/iconall.png) no-repeat 0 -24px;
+    margin: 9px 6px 0 10px;
+}
+
+
+.icon_dtjm {
+    float: left;
+    margin-top: 2px;
+    margin-right: 4px;
+    width: 35px;
+    height: 15px;
+    background: url(../images/icon.png) no-repeat -31px -658px;
+}
+
+.icon_star {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 11px;
+    height: 13px;
+    background-position: -65px -840px;
+}
+.icon_yz {
+    background-position: -20px -735px;
+}
+
+.icon_fg {
+    background-position: 0 -60px;
+}
+
+.icon_cj {
+    background-position: 0 -88px;
+}
+
+.icon_qg {
+    background-position: 0 -117px;
+}
+
+.icon_zt {
+    background-position: 0 -141px;
+}
+.icon_v {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 11px;
+    height: 12px;
+    background: url(../images/icon.png) no-repeat 0 0;
+    font-size: 100%;
+    font-style: normal;
+}
+
+/*文字图标*/
+.icon_gedan {
+    width: 54px;
+    height: 24px;
+    background-position: 0 -243px;
+}
+.icon_album {
+    width: 54px;
+    height: 24px;
+    background-position: 0 -186px;
+}
+.icon_djradio {
+    width: 54px;
+    height: 24px;
+    background-position: 0 -1014px;
+}
+.icon_program {
+    width: 73px;
+    height: 24px;
+    background-position: 0 -75px;
+}
+
+/*评论区域*/
+.icon_face {
+    background-position: -40px -490px;
+}
+.icon_at {
+    background-position: -60px -490px;
+}
+.icon_zan {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 14px;
+    background-position: -150px 0;
+    margin-top: -4px;
+}

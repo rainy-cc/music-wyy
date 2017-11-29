@@ -1,0 +1,842 @@
+/*css reset*/
+
+body, h1, h2, h3, h4, h5, p, dl, dd, ul, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*IE7-浏览器不支持border-spacing*/
+    table-layout: fixed;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+em, i {
+    font-style: normal;
+}
+
+
+/*定义公共的样式类*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei";
+    font-size: 12px;
+    background: #f5f5f5;
+}
+
+/*
+    盒模型距离
+ */
+.mt10 {
+    margin-top: 10px!important;
+}
+.mt20 {
+    margin-top: 20px!important;
+}
+
+/*字体为黑色*/
+
+.color0 {
+    color: #000;
+}
+
+.color9 {
+    color: #999;
+}
+.color6{
+    color: #999;
+}
+.color3 {
+    color: #333;
+}
+.color2c3 {
+    color: #0c72c3;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*文字溢出*/
+
+.overhide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+
+/*
+	页面主体部分的容器  g--global
+*/
+
+.g_main {
+    width: 980px;
+    min-height: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-width: 0 1px;
+}
+.g_mainbg {
+    background: url(../images/mainBg.png) repeat-y -1px 0;
+}
+.g_wrap {
+    position: relative;
+    padding: 40px;
+}
+
+.g_side {
+    position: relative;
+    width: 270px;
+}
+.g_sidewrap {
+    padding: 20px 35px 40px 35px;
+}
+/*
+    一些共用的头部
+ */
+.cm_title_h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+/*
+	按钮组  播放 收藏 评论   下载
+        btns_group  全局
+*/
+
+.btns_group {
+    height: 31px;
+    margin-right: -10px;
+    margin-bottom: 25px;
+}
+
+.btns_group a {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    padding-right: 5px;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+/*播放*/
+.btns_group .btn-play {
+    color: #fff;
+    background: url(../images/button2.png) no-repeat right -428px;
+}
+.btns_group .btn-play:hover {
+    background-position: right -510px;
+}
+.btns_group .btn-play span {
+    float: left;
+    padding: 0 7px 0 8px;
+    background: url(../images/button2.png) no-repeat 0 -387px;
+}
+.btns_group .btn-play span:hover {
+    background-position: 0 -469px;
+}
+.btns_group .btn-play span .play {
+    float: left;
+    width: 20px;
+    height: 18px;
+    margin: 6px 2px 2px 0;
+    background: url(../images/button2.png) no-repeat 0 -1622px;
+}
+.btns_group .btn-play span:hover .play {
+    background-position: -28px -1622px;
+}
+
+.btns_group .plus {
+    width: 31px;
+    margin-left: -3px;
+    margin-right: 5px;
+    padding-right: 0;
+    background: url(../images/button2.png) no-repeat 0 -1588px;
+}
+
+.btns_group .plus:hover {
+    background-position-x: -40px;
+}
+
+.btns_group .btn-public {
+    margin-right: 6px;
+    background: url(../images/button2.png) no-repeat right -1020px;
+}
+
+.btns_group .btn-public span {
+    float: left;
+    padding-right: 2px;
+    padding-left: 28px;
+    line-height: 31px;
+    color: #000;
+    background: url(../images/button2.png) no-repeat;
+}
+
+.btns_group .btn-play2 {
+    color: #fff;
+    background: url(../images/button2.png) no-repeat right -428px;
+}
+.btns_group .btn-play2:hover {
+    background-position: right -762px;
+}
+.btns_group .btn-play2 span {
+    color: #fff;
+    padding: 0 6px 0 36px;
+    background-position: 0 -633px;
+}
+.btns_group .btn-play2:hover span {
+    background-position: 0 -719px;
+}
+.btns_group .btn-playall {
+    background-position: right -2325px;
+}
+.btns_group .btn-playall span {
+    background-position: 0 -2285px;
+}
+.btns_group .btn-add span {
+    background-position: 0 -977px;
+}
+
+.btns_group .btn-share span {
+    background-position: 0 -1225px;
+}
+
+.btns_group .btn-downLoad span {
+    background-position: 0 -2761px;
+}
+.btns_group .btn-comment span {
+    background-position: 0 -1465px;
+}
+.btns_group .btn-add:hover,
+.btns_group .btn-share:hover,
+.btns_group .btn-downLoad:hover,
+.btns_group .btn-comment:hover,
+.btns_group .btn-zan:hover {
+    background-position:right -1106px;
+}
+.btns_group .btn-add:hover span {
+    background-position: 0 -1063px;
+}
+.btns_group .btn-share:hover span {
+    background-position: 0 -1268px;
+}
+.btns_group .btn-downLoad:hover span {
+    background-position: 0 -2805px;
+}
+.btns_group .btn-comment:hover span {
+    background-position: 0 -1508px;
+}
+
+
+.btns_group .btn-zan span {
+    padding-left: 10px;
+    background-position: 0 -59px;
+}
+.btns_group .btn-zan:hover span {
+    background-position: 0 -141px;
+}
+
+.btns_group .btn-zan .icon_zan {
+    float: left;
+    width: 17px;
+    height: 15px;
+    margin: 8px 6px 0 0;
+    background: url(../images/button2.png) no-repeat 0 -95px;
+}
+.btns_group .btn-sub {
+    padding-right: 10px;
+    background-position: right -2163px;
+}
+.btns_group .btn-sub:hover {
+    background-position: right -2558px;
+}
+.btns_group .btn-sub:hover span {
+    background-position: 0 -2516px;
+}
+.btns_group .btn-sub span {
+    padding: 0 6px 0 34px;
+    color: #fff;
+    background-position: 0 -2125px;
+}
+
+/*
+    歌曲列表  表格  类名song_tb
+	t-  table
+*/
+
+.song_tb {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.song_tb .stb_title {
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+    color: #666;
+}
+
+.song_tb .stb_title h3 {
+    float: left;
+    line-height: 28px;
+    font-weight: normal;
+    color: #000;
+    font-size: 20px;
+}
+
+.song_tb .stb_length {
+    float: left;
+    padding: 10px 0 0 20px;
+}
+
+.song_tb .stb_playnum {
+    float: right;
+    margin-top: 10px;
+}
+
+.song_tb .stb_playnum strong {
+    color: #c20c0c;
+}
+
+.song_tb .sl_table {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+}
+
+.song_tb .sl_table th {
+    height: 38px;
+    background: url(../images/toplist/table.png) repeat-x 0 0 #f7f7f7;
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+    color: #666;
+}
+
+.sl_table .width1 {
+    width: 74px;
+}
+
+.sl_table .width3 {
+    width: 111px;
+}
+
+.sl_table .width4 {
+    width: 90px;
+}
+
+.sl_table .width5 {
+    width: 125px;
+}
+
+.sl_table th .t_title {
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 10px;
+    background: url(../images/toplist/table.png) no-repeat 0 -56px;
+}
+
+.sl_table td {
+    padding: 6px 10px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.sl_table td .hd {
+    height: 18px;
+}
+
+.sl_table td .hd .num {
+    margin-left: 5px;
+    color: #999;
+}
+
+.sl_table td .hd .icon_play {
+    float: right;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../images/toplist/table.png) no-repeat 0 -103px;
+}
+
+
+.sl_table td .hd .icon_play:hover {
+    background-position: 0 -128px;
+}
+.sl_table td .hd .icon_play.active {
+    background-position: -20px -128px;
+}
+
+.sl_table .even td {
+    background-color: #f7f7f7;
+}
+
+/*
+	     表格里的下载按钮 t--table
+	*/
+
+.t_btns {
+	display: none;
+}
+
+.t_btns .t_btn {
+    width: 18px;
+    height: 16px;
+    margin: 2px 0 0 4px;
+    float: left;
+}
+
+.t_btns .t_btn.add {
+    width: 13px;
+    height: 13px;
+    margin-left: 0;
+    background: url(../images/icon.png) no-repeat 0 -700px;
+}
+.t_btns .t_btn.add:hover {
+	background-position: -22px -700px;
+}
+.t_btns .t_btn.value {
+    background: url(../images/toplist/table.png) no-repeat 0 -174px;
+}
+.t_btns .t_btn.value:hover {
+	background-position: -20px -174px;
+}
+.t_btns .t_btn.share {
+    background: url(../images/toplist/table.png) no-repeat 0 -195px;
+}
+.t_btns .t_btn.share:hover {
+	background-position: -20px -195px;
+}
+.t_btns .t_btn.download {
+    background: url(../images/toplist/table.png) no-repeat -81px -174px;
+}
+.t_btns .t_btn.download:hover {
+	background-position: -104px -174px;
+}
+
+
+.sl_table tr:hover .time {
+    display: none;
+}
+.sl_table tr:hover .t_btns {
+    display: block;
+    margin-right: -10px;
+}
+/*
+    歌单的单个图片盒子样式
+*/
+.image_box {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.image_box a, .image_box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.image_box .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 27px;
+    background: url(../images/recommend/coverall.png) no-repeat 0 -537px;
+}
+
+.image_box .num {
+    float: left;
+    margin: 6px 0 0 0;
+    line-height: 18px;
+    color: #ccc;
+}
+
+.image_box .play_icon {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 16px;
+    height: 17px;
+    background: url(../images/iconall.png) no-repeat 0 0;
+}
+.image_box .play_icon:hover {
+    background-position: 0 -60px;
+}
+
+/*
+    歌手封面singer——cover
+ */
+.singer_cover {
+
+}
+.singer_cover .avatar {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 8px;
+}
+
+.singer_cover .avatar a, .singer_cover .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.singer_cover  .name .icon {
+    float: right;
+    width: 17px;
+    height: 18px;
+    background: url(../images/icon.png) no-repeat 0 -740px;
+}
+/*
+    专辑封面singer——cover
+ */
+.alb_coverlist {
+
+}
+.album_coverlist {
+    margin: 20px 0 0 -33px;
+}
+.album_coverlist li {
+    float: left;
+    width: 153px;
+    height: 180px;
+    padding-left: 33px;
+    padding-bottom: 30px;
+}
+.album_coverlist .alb_imgwrap {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.album_coverlist .alb_imgwrap a.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding-right: 23px;
+    background: url(../images/coverall.png) no-repeat 0 -845px;
+}
+.album_coverlist .alb_imgwrap img {
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+.album_coverlist .icon_play {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/iconall.png) no-repeat 0 -140px;
+    cursor: pointer;
+}
+.album_coverlist .icon_play:hover {
+    background-position: 0 -170px;
+}
+.album_coverlist li:hover .icon_play {
+    display: block;
+}
+.album_coverlist .name {
+    margin: 8px 0 4px;
+    font-size: 14px;
+}
+.album_coverlist .nickname a  {
+    color: #666;
+}
+
+/*公用的头部*/
+.c_title {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.c_title h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.c_title .title {
+    color: #000;
+    margin: 12px 0 0 0;
+}
+
+.c_title .more {
+    margin-top: 14px;
+}
+
+.c_title .nav {
+    float: left;
+    margin: 12px 0 0 20px;
+}
+.c_title .nav a{
+    color: #666;
+}
+.c_title .nav span{
+    margin: 0 10px;
+    color: #c7c7c7;
+}
+/*多版本下载 start*/
+.mutil_download {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.mutil_download h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.md_list {
+    width: 200px; /*暂时的*/
+    height: 65px;
+    margin-bottom: 10px;
+    background: url(../images/others.png) no-repeat 0 -392px;
+}
+.md_list li {
+    float: left;
+}
+.md_list li a {
+    display: block;
+    width: 42px;
+    height: 48px;
+}
+.md_list li a:hover {
+    background: url(../images/others.png) no-repeat;
+}
+.md_list li a.ios:hover {
+    background-position: 0 -472px;
+}
+.md_list li a.pc:hover {
+    background-position: -72px  -472px;
+}
+.md_list li a.android:hover {
+    background-position: -158px -472px;
+}
+.md_list li a.pc {
+    width: 60px;
+    margin: 0 26px 0 30px;
+}
+.mutil_download p {
+    color: #999;
+}
+/*多版本下载 end*/
+/*
+    页面的右侧侧边栏 g_side
+*/
+.g_side {
+    position: relative;
+    width: 270px;
+    zoom: 1;
+}
+.g_sidewrap {
+    padding:20px 35px 40px 35px;
+}
+/*
+    侧边栏的广告区域  side
+*/
+.g_sideAd {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 30px;
+}
+.g_sideAd a,
+.g_sideAd img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    侧边栏推荐歌单
+ */
+.side_playlist {
+     margin-bottom: 25px;
+ }
+.side_playlist h5 {
+     margin-bottom: 20px;
+     height: 24px;
+     line-height: 24px;
+     border-bottom: 1px solid #ccc;
+     color: #333;
+ }
+ .side_playlist .reclist {
+
+ }
+ .side_playlist .reclist li {
+     width: 200px;
+     height: 50px;
+     margin-bottom: 15px;
+     line-height: 24px;
+ }
+ .side_playlist .reclist .avatar {
+     width: 50px;
+     height: 50px;
+ }
+ .side_playlist .reclist .avatar a,
+ .side_playlist .reclist .avatar img {
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+ .side_playlist .info {
+     margin-left: 60px;
+ }
+ .side_playlist .info p {
+     width: 140px;
+     height: 24px;
+     overflow: hidden;
+ }
+ .side_playlist .by {
+     color: #999;
+ }
+ .side_playlist .name {
+     max-width: 106px;
+     margin: 0 2px 0 4px;
+     color: #666;
+ }
+ .side_playlist .icon {
+     width: 12px;
+     height: 13px;
+     margin: 4px 0 0 2px;
+     background: url(../images/icon.png) no-repeat -65px -840px;
+ }
+
+ .pld_table td:hover .t_btns {
+ 	display: block;
+     margin-right: -10px;
+ }
+ .pld_table td:hover .time {
+ 	display: none;
+ }
+
+
+/*分页*/
+.pagination {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.pagination li.pagi_item {
+    display: inline-block;
+    margin: 0 1px 0 2px;
+    height: 22px;
+    padding: 0 8px;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.pagination li.pagi_item:hover {
+    border-color : #666;
+}
+.pagination li.btn {
+    display: inline-block;
+    margin: 0 1px 0 2px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    text-align: left;
+    background: url(../images/button.png) no-repeat;
+    cursor: pointer;
+}
+.pagination li.prev_page {
+    width: 47px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 0 0 22px;
+    background-position: 0 -560px;
+}
+.pagination li.prev_page:hover {
+    background-position: 0 -590px;
+}
+.pagination li.next_page {
+    width: 57px;
+    padding: 0 0 0 12px;
+    background-position: -75px -560px;
+}
+.pagination li.next_page:hover {
+    background-position: -75px -590px;
+}
+.pagination li.active {
+    border-color: #A2161B;
+    background: url(../images/button.png) no-repeat 0 -650px;
+    color: #fff;
+}
+
+.pagination li.active:hover {
+    border-color: #A2161B;
+    cursor: default;
+}
+
+.pagination .dot {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    margin: 0 2px;
+}

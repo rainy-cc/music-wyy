@@ -1,0 +1,139 @@
+#comment {
+    padding-top: 40px;
+}
+
+.cmt_wrap {}
+
+
+/*评论区域头部*/
+
+.cmt_hd {
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.cmt_hd h3 {
+    float: left;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cmt_hd span {
+    float: left;
+    padding: 9px 0 0 20px;
+    color: #666;
+}
+
+
+/*评论区域主体*/
+
+.cmt_bd {
+    padding-top: 20px;
+}
+
+.cmt_bd .input_area {}
+
+.cmt_bd .avatar, .cmt_bd .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.cmt_bd .form_area {
+    margin-left: 65px;
+}
+
+.cmt_bd .areabox {
+    position: relative;
+    box-sizing: border-box;
+    height: 64px;
+    padding: 5px;
+    border: 1px solid #cdcdcd;
+}
+
+.cmt_bd textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.cmt_bd .form_btns {
+    padding-top: 10px;
+}
+
+.cmt_bd .form_btns .icon {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.cmt_bd .form_btns a {
+    float: right;
+    width: 46px;
+    height: 25px;
+    background: url(../images/button.png) no-repeat -84px -64px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.cmt_bd .form_btns a:hover {
+    background-position: -84px -94px;
+}
+
+.cmt_bd .form_btns span {
+    float: right;
+    margin-right: 10px;
+    line-height: 25px;
+}
+
+.cmt_bd .cmt_content h4 {
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.cmt_bd .cmt_item {
+    padding: 15px 0;
+    border-top: 1px dotted #ccc;
+}
+
+.cmt_detail_wrap {
+    padding-left: 65px;
+}
+
+.cmt_detail_wrap p {
+    line-height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.cmt_detail_wrap p a {
+    color: #0c73c2;
+}
+
+.cmt_detail_wrap div {
+    line-height: 20px;
+}
+
+.cmt_detail_wrap div .cmt_time {
+    float: left;
+    color: #999;
+}
+
+.cmt_detail_wrap div .line {
+    float: right;
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.cmt_detail_wrap div a {
+    float: right;
+    color: #666;
+}
+
+
+.cmt_detail_wrap a:hover {
+    text-decoration: underline;
+}

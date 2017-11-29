@@ -1,0 +1,162 @@
+/*
+    电台详情页的样式
+*/
+.dr_ctx {
+    width: 709px;
+    min-height: 700px;
+    border-right: 1px solid #ccc;
+}
+.dr_ctxwrap {
+    padding: 43px 30px 40px 39px;
+}
+.dr_ctx .img_avatar {
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin-left: -3px;
+    border: 1px solid #ccc;
+}
+.dr_ctx .img_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.dr_ctx .ctx {
+    padding-top: 4px;
+    margin-left: 230px;
+}
+
+.dr_ctx .ctx .title {
+    position: relative;
+    margin: 0 0 12px;
+    line-height: 24px;
+}
+
+.dr_ctx .ctx .title h2 {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.dr_ctx .ctx .author {
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.dr_ctx .ctx .author a.avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+.dr_ctx .ctx .author a.avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.dr_ctx .ctx .author a.name{
+    color: #0c73c2;
+}
+.dr_ctx .intro {
+    margin-top: 4px;
+    line-height: 20px;
+    color: #666;
+}
+.dr_ctx .intro .type {
+    float: left;
+    margin-right: 8px;
+    height: 18px;
+    overflow: hidden;
+    padding: 0 6px;
+    color: #cc0000;
+    border: 1px solid #cc0000;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.dr_ctx .dr_table tr {
+    height: 56px;
+}
+.dr_ctx .dr_table .column1 {
+    width: 62px;
+}
+.dr_ctx .dr_table .column2 {
+    width: 230px;
+    padding-left: 0;
+}
+.dr_ctx .dr_table .column2 .name {
+    width: 100%;
+    margin-right: -100px;
+}
+.dr_ctx .dr_table .column3 {
+    width: 60px;
+        color: #666;
+}
+.dr_ctx .dr_table .column4 {
+        width: 70px;
+        color: #666;
+    }
+.dr_ctx .dr_table .column5 {
+    width: 66px;
+    color: #999;
+}
+.dr_ctx .dr_table .column6 {
+    color: #999;
+}
+.dr_ctx .dr_table tr:hover .name {
+    width: 170px;
+}
+.dr_ctx .dr_table tr:hover .t_btns {
+    display: block;
+}
+
+
+/*
+    可能喜欢
+*/
+.dr_side .maylike {
+
+}
+.dr_side .maylike h5{
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.dr_side .maylike .list {
+
+}
+.dr_side .maylike li {
+    width: 200px;
+    height: 50px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.dr_side .maylike .avatar {
+    width: 50px;
+    height: 50px;
+}
+.dr_side .maylike .avatar a,
+.dr_side .maylike .avatar img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.dr_side .maylike .info {
+    margin-left: 60px;
+}
+.dr_side .maylike .info p {
+    width: 140px;
+    height: 24px;
+}
+.dr_side .maylike .info .by {
+    float: left;
+    color: #999;
+    margin-right: 6px;
+}
+.dr_side .maylike .info .author {
+    float: left;
+}

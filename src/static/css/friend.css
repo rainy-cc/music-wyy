@@ -1,0 +1,22 @@
+
+.friend_bg {
+    width: 902px;
+    height: 414px;
+    margin: 0 auto 0;
+    padding-top: 70px;
+    background-position: 0 70px;
+    background: url(../images/friend/notlogin.jpg) no-repeat 0 70px;;
+}
+.friend .desc {
+    padding: 178px 0 0 535px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #666;
+}
+.friend .login_btn {
+    display: block;
+    width: 157px;
+    height: 48px;
+    margin: 36px 0 0 535px;
+    text-indent: -9999px;
+}

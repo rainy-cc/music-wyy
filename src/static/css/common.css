@@ -1,0 +1,294 @@
+
+/*
+    歌单的单个图片盒子样式
+*/
+.image_box {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.image_box a, .image_box img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.image_box .info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 27px;
+    background: url(../images/recommend/coverall.png) no-repeat 0 -537px;
+}
+
+.image_box .num {
+    float: left;
+    margin: 6px 0 0 0;
+    line-height: 18px;
+    color: #ccc;
+}
+
+.image_box .play_icon {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 16px;
+    height: 17px;
+    background: url(../images/iconall.png) no-repeat 0 0;
+}
+.image_box .play_icon:hover {
+    background-position: 0 -60px;
+}
+
+/*
+    歌手封面singer——cover
+ */
+.singer_cover {
+
+}
+.singer_cover .avatar {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 8px;
+}
+
+.singer_cover .avatar a, .singer_cover .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.singer_cover  .name .icon {
+    float: right;
+    width: 17px;
+    height: 18px;
+    background: url(../images/icon.png) no-repeat 0 -740px;
+}
+/*
+    专辑封面singer——cover
+ */
+.alb_coverlist {
+
+}
+.album_coverlist {
+    margin: 20px 0 0 -33px;
+}
+.album_coverlist li {
+    float: left;
+    width: 153px;
+    height: 180px;
+    padding-left: 33px;
+    padding-bottom: 30px;
+}
+.album_coverlist .alb_imgwrap {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.album_coverlist .alb_imgwrap a.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding-right: 23px;
+    background: url(../images/coverall.png) no-repeat 0 -845px;
+}
+.album_coverlist .alb_imgwrap img {
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+.album_coverlist .icon_play {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/iconall.png) no-repeat 0 -140px;
+    cursor: pointer;
+}
+.album_coverlist .icon_play:hover {
+    background-position: 0 -170px;
+}
+.album_coverlist li:hover .icon_play {
+    display: block;
+}
+.album_coverlist .name {
+    margin: 8px 0 4px;
+    font-size: 14px;
+}
+.album_coverlist .nickname a  {
+    color: #666;
+}
+
+/*公用的头部*/
+.c_title {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+
+.c_title h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.c_title .title {
+    color: #000;
+    margin: 12px 0 0 0;
+}
+
+.c_title .more {
+    margin-top: 14px;
+}
+
+.c_title .nav {
+    float: left;
+    margin: 12px 0 0 20px;
+}
+.c_title .nav a{
+    color: #666;
+}
+.c_title .nav span{
+    margin: 0 10px;
+    color: #c7c7c7;
+}
+/*多版本下载 start*/
+.mutil_download {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.mutil_download h5 {
+    margin-bottom: 20px;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.md_list {
+    width: 200px; /*暂时的*/
+    height: 65px;
+    margin-bottom: 10px;
+    background: url(../images/others.png) no-repeat 0 -392px;
+}
+.md_list li {
+    float: left;
+}
+.md_list li a {
+    display: block;
+    width: 42px;
+    height: 48px;
+}
+.md_list li a:hover {
+    background: url(../images/others.png) no-repeat;
+}
+.md_list li a.ios:hover {
+    background-position: 0 -472px;
+}
+.md_list li a.pc:hover {
+    background-position: -72px  -472px;
+}
+.md_list li a.android:hover {
+    background-position: -158px -472px;
+}
+.md_list li a.pc {
+    width: 60px;
+    margin: 0 26px 0 30px;
+}
+.mutil_download p {
+    color: #999;
+}
+/*多版本下载 end*/
+/*
+    页面的右侧侧边栏 g_side
+*/
+.g_side {
+    position: relative;
+    width: 270px;
+    zoom: 1;
+}
+.g_sidewrap {
+    padding:20px 35px 40px 35px;
+}
+/*
+    侧边栏的广告区域  side
+*/
+.g_sideAd {
+    width: 200px;
+    height: 220px;
+    margin-bottom: 30px;
+}
+.g_sideAd a,
+.g_sideAd img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+    侧边栏推荐歌单
+ */
+.side_playlist {
+     margin-bottom: 25px;
+ }
+.side_playlist h5 {
+     margin-bottom: 20px;
+     height: 24px;
+     line-height: 24px;
+     border-bottom: 1px solid #ccc;
+     color: #333;
+ }
+ .side_playlist .reclist {
+
+ }
+ .side_playlist .reclist li {
+     width: 200px;
+     height: 50px;
+     margin-bottom: 15px;
+     line-height: 24px;
+ }
+ .side_playlist .reclist .avatar {
+     width: 50px;
+     height: 50px;
+ }
+ .side_playlist .reclist .avatar a,
+ .side_playlist .reclist .avatar img {
+     display: block;
+     width: 100%;
+     height: 100%;
+ }
+ .side_playlist .info {
+     margin-left: 60px;
+ }
+ .side_playlist .info p {
+     width: 140px;
+     height: 24px;
+     overflow: hidden;
+ }
+ .side_playlist .by {
+     color: #999;
+ }
+ .side_playlist .name {
+     max-width: 106px;
+     margin: 0 2px 0 4px;
+     color: #666;
+ }
+ .side_playlist .icon {
+     width: 12px;
+     height: 13px;
+     margin: 4px 0 0 2px;
+     background: url(../images/icon.png) no-repeat -65px -840px;
+ }
+
+ .pld_table td:hover .t_btns {
+ 	display: block;
+     margin-right: -10px;
+ }
+ .pld_table td:hover .time {
+ 	display: none;
+ }

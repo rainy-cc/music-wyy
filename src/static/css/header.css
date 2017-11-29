@@ -1,0 +1,320 @@
+#header{
+
+}
+.header_top {
+    position: relative;
+    z-index: 999;
+    height: 70px;
+    background: #242424;
+}
+.header_top_wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 176px;
+    background: url(../images/topbar.png) no-repeat 0 0;
+}
+.logo a {
+    display: block;
+    width: 156px;
+    height: 70px;
+    padding-right:20px;
+    text-indent: -9999px;
+
+}
+.header_nav_bar {
+    float: left;
+}
+.header_nav_bar li {
+    position: relative;
+    float: left;
+    height: 70px;
+    font-size: 14px;
+}
+.header_nav_bar li:hover {
+    background: #000;
+
+}
+.header_nav_bar li:hover span {
+        color: #fff;
+}
+.header_nav_bar li.active {
+    background: #000;
+}
+
+.header_nav_bar li.active span {
+        color: #fff;
+}
+.header_nav_bar li a {
+    display: block;
+    height: 70px;
+    padding: 0 19px;
+    text-align: center;
+    line-height: 70px;
+    color: #ccc;
+}
+.header_nav_bar li a.active {
+    background: #000;
+}
+
+.header_nav_bar .triangle {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 12px;
+    height: 6px;
+    margin-left: -6px;
+    overflow: hidden;
+    background: url(../images/topbar.png) no-repeat -226px 0;
+}
+.header_nav_bar li a.active .triangle {
+    display: block;
+}
+
+/*头部的登陆部分*/
+.header_login {
+    position: relative;
+    float: right;
+    height: 70px;
+    margin-left: 20px;
+    padding: 0 22px 0 0;
+    background: url(../images/topbar.png) right -28px;
+}
+.header_login a.login_txt {
+    display: block;
+    width: 28px;
+    height: 70px;
+    line-height: 70px;
+    color: #787878;
+    font-size: 14px;
+}
+.header_login a.login_txt:hover {
+    text-decoration: underline;
+}
+
+.header_login .hd_dropdown {
+    display: none;
+    position: absolute;
+    right: -48px;
+    top: 58px;
+    width: 160px;
+    height: 195px;
+    box-sizing: border-box;
+    border: 1px solid #232323;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.hd_dropdown .arrow {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 14px;
+    height: 8px;
+    margin-left: -7px;
+    background:url(../images/toplist.png) no-repeat -20px 0;
+    z-index: 100;
+}
+
+.hd_dropdown li {
+    height: 38px;
+    line-height: 38px;
+    background-color: #2b2b2b;
+}
+.hd_dropdown li:hover {
+    background-color: #353535;
+}
+.hd_dropdown li:hover a {
+    color: #fff;
+}
+.hd_dropdown li+li {
+    border-top: 1px solid #232323;
+}
+.hd_dropdown li a {
+    display: block;
+    height: 38px;
+    color: #ccc;
+    overflow: hidden;
+}
+
+
+.header_login:hover .hd_dropdown{
+    display: block;
+}
+/*视频投稿*/
+.hd_video_sub {
+    float: right;
+    width: 90px;
+    height: 32px;
+    margin: 19px 0 0 12px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    background: url(../images/topbar.png) 0 -140px;
+    line-height: 33px;
+    color: #ccc;
+}
+.hd_video_sub:hover {
+    background-position: -100px -140px;
+    color: #fff;
+
+}
+
+/*搜索框*/
+.hd_search {
+    position: relative;
+    float: right;
+    margin-top: 19px;
+}
+.hd_search_bg {
+    position: relative;
+    width: 158px;
+    height: 32px;
+    padding:8px 10px 8px 30px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background: #fff url(../images/topbar.png) no-repeat 0 -99px;
+}
+.hd_search_bg input {
+    width: 115px;
+    height: 16px;
+    line-height: 16px;
+    color: #333;
+}
+.hd_search_bg label {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 30px;;
+    width: 105px;
+    color: #9b9b9b;
+    cursor: text;
+}
+
+/*搜索列表*/
+.search_list {
+    position: absolute;
+    left: 0;
+    top: 42px;
+    z-index: 120;
+    width: 240px;
+    box-sizing: border-box;
+    border: 1px solid #bebebe;
+    box-shadow: 0 4px 7px #555;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.search_list .title{
+    height: 17px;
+    line-height: 17px;
+    padding: 11px 10px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.search_list .title a:hover {
+    background: #e3e5e7
+}
+
+.search_list .type {
+
+}
+.search_list .type h5 {
+    float: left;
+    width: 52px;
+    padding: 10px 0 0 10px;
+    line-height: 17px;
+    font-weight: normal;
+}
+.search_list .type .icon {
+    float: left;
+    width: 14px;
+    height: 15px;
+    margin: 1px 4px 0 0;
+    background: url(../images/icon.png) no-repeat;
+}
+.search_list .type .icon_music {
+    background-position: -35px -300px;
+}
+.search_list .type .icon_singer {
+
+    background-position: -50px -300px;
+}
+.search_list .type .icon_zhuanji{
+    background-position: -35px -320px;
+}
+.search_list .type .icon_mv {
+    width: 13px;
+        height: 12px;
+        background-position: -60px -862px;
+    }
+.search_list .type .icon_gedan {
+background-position: -50px -320px;
+}
+.search_list .list {
+    margin-top: -1px;
+    margin-left: 64px;
+    padding: 6px 0 5px;
+    border-top: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+}
+.search_list .list li {
+    padding-left: 10px;
+    height: 24px;
+    line-height: 24px;
+}
+.search_list .keywords {
+    color:#0c73c2;
+}
+/*头部的边框线*/
+.header_line {
+    height: 5px;
+    background-color: #C20C0C;
+}
+
+/*头部发现音乐的导航条*/
+
+.hd_nav2 {
+    z-index: 90;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+
+.hd_nav2_wrap {
+    width: 1100px;
+    height: 34px;
+    margin: 0 auto;
+}
+.hd_nav2_list {
+    float: left;
+    padding-left: 180px;
+}
+.hd_nav2_list li,.hd_nav2_list a {
+    float: left;
+    color: #fff;
+    height: 34px;
+    text-align: center;
+}
+
+.hd_nav2_list a span {
+    display: inline-block;
+    height: 20px;
+    padding: 0 13px;
+    margin: 7px 17px 0;
+    border-radius: 10px;
+    line-height: 21px;
+}
+.hd_nav2_list a span:hover {
+    background: #9B0909;
+}
+/*.hd_nav2_list a span.active {
+    background: #9B0909;
+}*/
+.hd_nav2_list a.active span {
+    background: #9B0909;
+}
+/*.hd_nav2_list a.active  span{
+    background: #9B0909;
+}*/

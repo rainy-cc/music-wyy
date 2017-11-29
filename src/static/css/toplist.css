@@ -1,0 +1,297 @@
+/* 排行榜的样式 */
+
+#toplist {}
+
+.tl_wrap {
+
+}
+
+.tl_l {
+    width: 240px;
+    height: 100%;
+}
+
+.tl_l_ctx {
+    padding-top: 20px;
+}
+
+.tl_l_ctx h2 {
+    padding: 0 10px 12px 15px;
+    font-size: 14px;
+    height: 16px;
+    line-height: 16px;
+    color: #000;
+}
+
+.tl_list {}
+
+.tl_list li {
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+}
+
+.tl_list li:hover {
+    background: #e6e6e6
+}
+
+.tl_list li.active {
+    background: #e6e6e6
+}
+
+.tl_list .item {
+    position: relative;
+    overflow: hidden;
+}
+
+.tl_list .item div {
+    /*position: absolute;
+    width: 40px;
+    height: 40px;*/
+    float: left;
+}
+
+.tl_list .item a, .tl_list .item img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.tl_list .item p {
+    padding-left: 50px;
+}
+
+.tl_list .item p.name {
+    margin: 2px 0 6px 0;
+}
+
+
+/*右半部分*/
+
+.tl_r {
+    width: 669px;
+    padding: 0 35px;
+    border-left: 1px solid #d3d3d3;
+}
+
+.tl_r_hd {
+    padding: 40px 0;
+}
+
+.tl_r_hd .img_avatar {
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    border: 1px solid #ccc;
+}
+
+.tl_r_hd .img_avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.tl_r_hd .hd_detail {
+    padding-left: 180px;
+}
+
+.tl_r_hd .hd_detail_wrap {
+    overflow: hidden;
+}
+
+.tl_r_hd .hd_detail h3 {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 16px 0 4px;
+}
+
+.tl_r_hd .latest {
+    /*height: 35px;*/
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.tl_r_hd .latest i {
+    margin: 9px 0 0 3px;
+    float: left;
+    width: 13px;
+    height: 13px;
+    background: url(../images/icon.png) no-repeat -18px -682px;
+}
+
+.tl_r_hd .latest span {
+    float: left;
+    margin-left: 5px;
+    color: #666;
+}
+
+.tl_r_hd .latest span.frequency {
+    color: #999;
+}
+
+
+/*歌曲列表*/
+
+.song_list {}
+
+.song_list .sl_title {
+    height: 33px;
+    border-bottom: 2px solid #c20c0c;
+    color: #666;
+}
+
+.song_list .sl_title h3 {
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    float: left;
+    font-weight: normal;
+}
+
+.song_list .sl_title .length {
+    float: left;
+    padding: 10px 0 0 20px;
+}
+
+.song_list .sl_title .play_num {
+    float: right;
+    margin-top: 10px;
+}
+
+.song_list .sl_title .play_num strong {
+    color: #c20c0c;
+}
+
+
+/*表格*/
+
+.sl_tabel {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+}
+
+
+/*chongfu*/
+
+.sl_tabel th {
+    height: 38px;
+    background: url(../images/toplist/table.png) repeat-x 0 0 #f7f7f7;
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+    color: #666;
+}
+
+.sl_tabel .first_th {
+    width: 77px;
+}
+
+.sl_tabel .th_len {
+    width: 95px;
+}
+
+.sl_tabel th .t_title {
+    height: 18px;
+    line-height: 18px;
+    padding: 8px 10px;
+    background: url(../images/toplist/table.png) no-repeat 0 -56px;
+}
+
+.sl_tabel td {
+    padding: 6px 10px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.sl_tabel .column1 {
+    height: 18px;
+}
+
+.sl_tabel .column1 .num {
+    float: left;
+    width: 25px;
+    margin-left: 0;
+    text-align: center;
+}
+
+.sl_tabel .column1 .rank {
+    float: right;
+    width: 32px;
+    margin-right: -5px;
+    text-align: center;
+}
+
+.sl_tabel .column1 .rank .icon_new {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 16px;
+    height: 17px;
+    background: url(../images/icon.png) no-repeat -67px -283px;
+}
+
+.sl_tabel .column1 .rank .icon_rank {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 8px;
+    line-height: 17px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+.sl_tabel .column1 .rank .icon_raise {
+    color: #bb2128;
+    background-position: -74px -299px;
+}
+
+.sl_tabel .column1 .rank .icon_drop {
+    color: #d33a31;
+    background-position: -74px -318px;
+}
+
+.sl_tabel .column1 .rank .icon_same {
+    color: #999;
+    background-position: -74px -268px;
+}
+
+.sl_tabel .column2 {
+    position: relative;
+}
+
+.sl_tabel .column2 .avatar {
+    margin-right: 10px;
+}
+
+.sl_tabel .column2 .p_icon {
+    float: left;
+    margin-right: 8px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    background: url(../images/toplist/table.png) no-repeat 0 -103px;
+}
+
+.sl_tabel .col2_img {
+    line-height: 50px;
+}
+
+.sl_tabel .col2_img img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.sl_tabel .col2_img .p_icon {
+    margin-top: 17px;
+}
+
+.sl_tabel .column2 .p_icon:hover {
+    background-position: 0 -128px;
+}
+.sl_tabel .column2 .p_icon.active {
+    background-position: -20px -128px;
+}
+
+.sl_tabel .even td {
+    background: #f7f7f7;
+}

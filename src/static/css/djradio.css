@@ -1,0 +1,472 @@
+
+/*点套页面的轮播导航*/
+
+.djradio .rd_nav {
+    margin-bottom: 20px;
+}
+
+.djradio .rd_navwrap {
+    position: relative;
+    height: 194px;
+}
+.djradio .loading_state {
+    height: 150px;
+    padding-top: 60px;
+}
+.djradio .loading_state2 {
+    height: 350px;
+    padding-top: 250px;
+}
+.djradio .loading_state3 {
+    height: 200px;
+    padding-top: 80px;
+}
+
+/* dot 和arrow */
+
+.rd_navwrap .arrow {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;
+    background: url(../images/radio/radio_slide.png) no-repeat;
+    cursor: pointer;
+}
+
+.rd_navwrap .arrow_l {
+    left: -26px;
+    background-position: 0 -30px;
+}
+
+.rd_navwrap .arrow_r {
+    right: -26px;
+    background-position: -30px -30px;
+}
+
+.rd_navwrap .dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 0;
+}
+
+.rd_navwrap .dots .dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url(../images/radio/radio_slide.png) no-repeat;
+}
+
+.rd_navwrap .dots .dot:hover, .rd_navwrap .dots .dot.active {
+    background-position: -30px 0
+}
+
+.rd_navlist {
+    margin-left: -33px;
+}
+
+.rd_navlist li {
+    float: left;
+    margin: 0 0 25px 33px;
+    border-radius: 4px;
+}
+
+.rd_navlist li:hover {
+
+}
+
+.rd_navlist .nav_item {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-position: 0 0;
+    text-align: center;
+    color: #888;
+    overflow: hidden;
+}
+.rd_navlist .nav_item:hover {
+    background-image: url(../images/radio/radio_bg.png);
+}
+
+.rd_navlist .nav_item .navicon {
+    width: 48px;
+    height: 48px;
+    margin: 2px auto 0;
+    background-position: 0 0;
+}
+.rd_navlist .nav_item_active {
+    color: #d35757;
+    background: url(../images/radio/radio_bg.png) -70px 0;
+}
+
+.rd_navlist .nav_item_active .navicon {
+    background-position: -48px 0;
+}
+.rd_navlist .nav_item:hover {
+    text-decoration: none;
+}
+
+.rd_type {
+    margin-top: 30px;
+}
+
+
+/*.rd_type_hd {
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}*/
+
+
+/*.rd_type_hd h3 {
+    float: left;
+    font-size: 24px;
+    font-weight: normal;
+}*/
+
+
+/*.rd_type_hd .title {
+    color: #000;
+}*/
+
+.rd_type_hd .title:hover, .rd_type_hd .more:hover, .rd_typelist .info a:hover {
+    text-decoration: underline;
+}
+
+
+/*.rd_type_hd .more {
+    margin-top: 14px;
+}*/
+
+.rd_typelist {
+    margin-left: -30px;
+}
+
+.rd_typelist li {
+    float: left;
+    width: 435px;
+    height: 120px;
+    margin-left: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.rd_typelist .avatar {
+    float: left;
+    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.rd_typelist .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.rd_typelist .info {
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+.rd_typelist .info h4 {
+    margin: 16px 0 20px;
+    font-size: 18px;
+}
+
+.rd_typelist .info h4 a {
+    color: #000;
+}
+
+.rd_typelist .info p {
+    line-height: 20px;
+    color: #999;
+}
+
+
+/**/
+
+.rd_top_item {
+    width: 426px;
+}
+
+.rd_toplist {
+    height: 600px;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+}
+
+.rd_toplist li {
+    width: 424px;
+    height: 40px;
+    padding: 10px 0;
+}
+
+.rd_toplist li.even {
+    background: #f7f7f7;
+}
+
+.rd_toplist li:hover {
+    background: #eeeeee;
+}
+
+.rd_toplist li .avatar {
+    position: relative;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.rd_toplist .avatar .play_icon {
+    position: absolute;
+    display: none;
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    margin: -11px 0 0 -11px;
+    background: url(../images/iconall.png) no-repeat 0 -85px;
+}
+
+.rd_toplist li:hover .play_icon {
+    display: block;
+}
+
+.rd_toplist li .avatar img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.rd_toplist li .info {
+    width: 254px;
+    margin-left: 10px;
+    line-height: 20px;
+}
+.rd_toplist li .info p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.rd_toplist li .type {
+    height: 16px;
+    overflow: hidden;
+    padding: 0 6px;
+    margin-top: 10px;
+    border: 1px solid #999;
+    line-height: 16px;
+    color: #999;
+    font-size: 12px;
+}
+
+.rd_toplist li .type:hover {
+    color: #333;
+    border-color: #333;
+}
+
+
+/*右侧的样式*/
+
+.rd_toplist_h .rank_num {
+    float: left;
+    width: 47px;
+    margin: 6px 0 0 0;
+    text-align: center;
+}
+
+.rd_toplist_h .rank_num .num {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #da4545;
+}
+
+.rd_toplist_h .rank_num .icon_new {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 16px;
+    height: 17px;
+    background: url(../images/icon.png) no-repeat -67px -283px;
+}
+
+.rd_toplist_h .rank_num .icon_rank {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 8px;
+    line-height: 17px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+.rd_toplist_h .rank_num .icon_raise {
+    color: #bb2128;
+    background-position: -74px -299px;
+}
+
+.rd_toplist_h .rank_num .icon_drop {
+    color: #d33a31;
+    background-position: -74px -318px;
+}
+
+.rd_toplist_h .rank_num .icon_same {
+    color: #999;
+    background-position: -74px -268px;
+}
+
+.rd_toplist_h li .avatar {
+    margin-left: 0;
+}
+
+.rd_toplist_h li .info {
+    width: 208px;
+}
+
+.rd_toplist_h li .progress {
+    margin-top: 15px;
+    width: 100px;
+    height: 8px;
+    border-radius: 4px;
+    background: #dedede;
+    overflow: hidden;
+}
+
+.rd_toplist_h li .progress div {
+    width: 50px;
+    height: 8px;
+    border-radius: 4px;
+    background: #c4c4c4;
+}
+
+
+/*
+    更多电台推荐节目页
+    节目排行榜详情页面  rd_toplist_rank
+    ！！！！！！！
+    ！！！！！！！！此处样式需要整合
+*/
+.rd_more_toplist,
+.rd_toplist_rank {
+    height: auto;
+}
+.rd_more_toplist {
+    border: 1px solid #e2e2e2;
+    border-top: none;
+}
+.rd_more_toplist li, .rd_toplist_rank li{
+    width: 100%;
+    /*line-height: 40px;*/
+}
+.rd_more_toplist .avatar {
+    float: left;
+    margin-left: 20px;
+}
+.rd_more_toplist .name,.rd_toplist_rank .name {
+    float: left;
+    width: 304px;
+    margin: 0 0 0 10px;
+    line-height: 40px;
+}
+.rd_more_toplist .author,.rd_toplist_rank .author {
+    float: left;
+    line-height: 40px;
+    margin-left: 10px;
+    width: 166px;
+}
+.rd_more_toplist .playnum {
+    float: left;
+
+    line-height: 40px;
+    color: #999;
+    margin-left: 10px;
+    width: 90px;
+}
+.rd_more_toplist .zan {
+    float: left;
+
+    line-height: 40px;
+    width: 126px;
+    color: #999;
+    margin-left: 10px;
+}
+.rd_more_toplist .type,
+.rd_toplist_rank .type {
+    float: left;
+    margin: 10px 0 0 0;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    overflow: hidden;
+    padding: 0 6px;
+    border: 1px solid #999;
+}
+.rd_more_toplist .type:hover,
+.rd_toplist_rank .type:hover {
+    text-decoration: none;
+}
+.rd_toplist_rank .type {
+    margin-left: 20px;
+}
+.rd_toplist_rank .progress {
+    margin-right: 30px;
+}
+
+
+/*
+    分类页的样式
+*/
+
+.djradio .newradios {
+    margin-top: 10px;
+}
+.djradio .newradios .list {
+    margin: 16px 0 0 -37px;
+}
+.djradio .newradios .list li {
+    float: left;
+    width: 150px;
+    margin-left: 37px;
+}
+.djradio .newradios .list li {
+    float: left;
+    width: 150px;
+    margin-left: 37px;
+}
+.djradio .newradios .list .avatar, .djradio .newradios .list img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.djradio .newradios .list h5 {
+    margin: 12px 0 6px;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.djradio .newradios .list .desc {
+    line-height: 18px;
+    color: #999;
+}
+
+.djradio .allradios {
+    margin-top: 30px;
+}
+
+.rd_typelist .info .username {
+    margin-bottom: 6px;
+    line-height: 20px;
+}
+.rd_typelist .info .icon_user {
+    display: inline-block;
+    margin-right: 10px;
+    width: 14px;
+    height: 15px;
+    overflow: hidden;
+    vertical-align: middle;
+    background:  url(../images/icon.png) no-repeat -50px -300px;
+}

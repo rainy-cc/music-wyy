@@ -1,0 +1,68 @@
+/*
+    新碟上架  album
+        alb_
+*/
+
+.album {
+
+}
+
+.album_wrap {
+
+}
+.album .alb_hot {
+
+}
+.album .alb_list {
+    margin: 20px 0 0 -33px;
+}
+.album .alb_list li {
+    float: left;
+    width: 153px;
+    height: 180px;
+    padding-left: 33px;
+    padding-bottom: 30px;
+}
+.album .alb_list .alb_imgwrap {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.album .alb_list .alb_imgwrap a.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 130px;
+    height: 130px;
+    padding-right: 23px;
+    background: url(../images/coverall.png) no-repeat 0 -845px;
+}
+.album .alb_list .alb_imgwrap img {
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+.album .alb_list .icon_play {
+    display: none;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    width: 28px;
+    height: 28px;
+    background: url(../images/iconall.png) no-repeat 0 -140px;
+    cursor: pointer;
+}
+.album .alb_list .icon_play:hover {
+    background-position: 0 -170px;
+}
+.album .alb_list li:hover .icon_play {
+    display: block;
+}
+.album .alb_list .name {
+    margin: 8px 0 4px;
+    font-size: 14px;
+}
+.album .alb_list .nickname a  {
+    color: #666;
+}

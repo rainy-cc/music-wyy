@@ -1,0 +1,19 @@
+.page404 {
+
+}
+
+.page404 .not {
+    padding: 125px 0 0;
+    text-align: center;
+}
+.page404 .not .bg404 {
+    width: 270px;
+height: 112px;
+margin: 0 auto;
+    background: url(../images/logo.15f4835a.png) 0 -405px;
+}
+.page404 .not .text {
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: "Microsoft Yahei";
+}

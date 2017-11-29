@@ -1,0 +1,153 @@
+.singer {
+    background: url(../images/singerpage_bg.png) repeat-y;
+}
+
+.singer_nav {
+    width: 180px;
+}
+
+.sg_nav_wrap {
+    padding: 50px 10px 40px;
+}
+
+.singer_nav .type_box {
+    margin: 5px 0 0;
+    padding-top: 16px;
+}
+
+.singer_nav .type_box+.type_box {
+    border-top: 1px solid #d3d3d3;
+}
+
+.singer_nav .title {
+    height: 25px;
+    padding-left: 14px;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+}
+
+.singer_nav li {
+    width: 160px;
+    height: 29px;
+    line-height: 29px;
+    margin-bottom: 2px;
+}
+
+.singer_nav li a {
+    display: block;
+    width: 133px;
+    height: 29px;
+    padding-left: 27px;
+    background: url(../images/singer/singer.png) no-repeat 0 -30px;
+}
+
+.singer_nav li a.active {
+    background-position: 0 0;
+}
+
+
+/*
+    singer_content 右侧内容区域
+*/
+
+.singer_content {
+    width: 799px;
+    min-height: 700px;
+    border-left: 1px solid #d3d3d3;
+}
+
+.sg_content_wrap {
+    padding: 40px;
+}
+
+.sg_list_wrap {
+    margin: 20px 0 0 -17px;
+}
+
+.sg_list {
+    overflow: hidden;
+}
+
+.sg_list li {
+    float: left;
+    padding: 0 0 30px 17px;
+    width: 130px;
+    height: 154px;
+}
+
+/*.sg_list .avatar {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 8px;
+}
+
+.sg_list .avatar a, .sg_list .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sg_list li .name .icon {
+    float: right;
+    width: 17px;
+    height: 18px;
+    background: url(../images/icon.png) no-repeat 0 -740px;
+}*/
+
+.sg_list .line {
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #999;
+}
+
+.sg_list .no_avatar {
+    height: 30px;
+    width: 130px;
+    padding-bottom: 0;
+    line-height: 30px;
+}
+
+.sg_list .no_avatar a.name {
+    float: left;
+    max-width: 105px;
+}
+
+.sg_list .no_avatar a.icon {
+    float: left;
+    margin: 6px 0 0 5px;
+    width: 17px;
+    height: 18px;
+    background: url(../images/icon.png) no-repeat 0 -740px;
+}
+
+
+/*首字母搜索导航*/
+
+.sg_Initial_list {
+    margin-top: 20px;
+    margin-left: -3px;
+}
+
+.sg_Initial_list li {
+    float: left;
+    margin-left: 3px;
+    font-size: 14px;
+}
+
+.sg_Initial_list li a {
+    float: left;
+    width: 21px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.sg_Initial_list li a.zh {
+    width: 45px;
+    font-size: 12px;
+}
+
+.sg_Initial_list li a.active {
+    background: #c20c0c;
+    border-radius: 2px;
+    color: #fff;
+}

@@ -1,0 +1,347 @@
+/*
+    模态框的样式
+ */
+.modal_mask {
+    position: fixed;
+    z-index: 99998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal_mask .modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -220px;
+    width: 440px;
+    border-radius: 4px;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.8);
+    border: none;
+    overflow: hidden;
+}
+.modal .modal_hd {
+    position: relative;
+    background: #2d2d2d;
+    cursor: move;
+}
+.modal .md_title {
+    padding-left: 20px;
+    border-radius: 3px 3px 0 0;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}
+.modal .md_close_btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/layer.png) no-repeat 0 -95px;
+    cursor: pointer;
+}
+.modal .modal_bd {
+    background: #fff;
+}
+.modal .modal_bd .cnt {
+    padding: 40px 0;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.modal .modal_bd .info {
+    padding: 15px 40px;
+    overflow: hidden;
+}
+.modal .modal_bd .info i {
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon2.png) no-repeat -78px -45px;
+}
+.modal .modal_bd .info p {
+    float: right;
+    width: 300px;
+    line-height: 22px;
+    font-size: 14px;
+    text-align: left;
+}
+.modal .modal_bd .choose {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.modal .modal_bd .choose a {
+    display: inline-block;
+    margin: 0 10px;
+    padding-right: 5px;
+    height: 35px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 34px;
+    background: url(../images/button2.png) no-repeat;
+}
+.modal .modal_bd .choose a:hover {
+    text-decoration: none;
+}
+.modal .choose a span {
+    padding: 0 15px 0 20px;
+    display: block;
+    background: url(../images/button2.png) no-repeat;
+}
+.modal .modal_bd .choose a.now {
+    background-position: right -1690px;
+}
+.modal  .choose a.now span {
+    color: #fff;
+    background-position: 0 -1650px;
+}
+.modal .modal_bd .choose a.later {
+    background-position: right -1850px;
+}
+.modal  .choose a.later span {
+    background-position: 0 -1810px;
+}
+
+
+.modal_mask .login_box,
+.modal_mask .phone_login,
+.modal_mask .cpr_modal {
+    width: 530px;
+}
+
+/*登录框的头部*/
+/*.login_header {
+    position: relative;
+    background: #2d2d2d;
+    cursor: move;
+}*/
+
+/*.login_title {
+    padding-left: 20px;
+    border-radius: 3px 3px 0 0;
+    height: 38px;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+}*/
+
+
+/*
+    登录框的主体
+*/
+
+.login_content {
+    background: #fff;
+}
+.login_content_wrap{
+    padding: 40px 0;
+    overflow: hidden;/*清除浮动*/
+}
+.login_content_l{
+    box-sizing: border-box;
+    float: left;
+    width: 300px;
+    padding: 0 35px 3px 40px;
+    border-right: 1px dotted #ccc;
+}
+.login_l_img {
+    height: 120px;
+    margin-bottom: 10px;
+    background: url(../images/platform.png) no-repeat
+}
+.login_btn {
+    display: block;
+    width: 224px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+
+}
+.mobile_log_btn{
+    background: #3080cc;
+    margin-bottom: 10px;
+}
+
+.reg_btn {
+    background: #eaeaea;
+    color: #333;
+}
+
+
+.login_content_r {
+    float: left;
+    padding:3px 0 0 40px;
+}
+
+.login_method li {
+    height: 38px;
+    line-height: 38px;
+
+}
+.login_method li+li {
+    padding-top: 15px;
+}
+.login_method a {
+    color: #333;
+}
+.login_method a:hover {
+    text-decoration: underline;
+}
+
+.login_method i.login_method_icon {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 38px;
+    height: 38px;
+    background: url(../images/logo.15f4835a.png) no-repeat;
+}
+.login_method i.icon_wx {
+    background-position: -150px -670px;
+}
+.login_method i.icon_qq {
+    background-position: -190px -670px;
+}
+.login_method i.icon_sina {
+    background-position: -231px -670px;
+}
+.login_method i.icon_wyyx {
+    background-position: -271px -670px;
+}
+
+/*
+     手 机号登录
+ */
+.phone_login_cnt {
+    padding: 30px 0 43px;
+    width: 220px;
+    margin: 0 auto;
+}
+.modal_bd .phone_number {
+    position: relative;
+    height: 30px;
+    margin: 0;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.phone_number .area {
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 18px 0 5px;
+    border-right: 1px solid #cdcdcd;
+}
+.phone_number .area .down {
+    position: absolute;
+    top: 14px;
+    right: 7px;
+    width: 7px;
+    height: 4px;
+    background: url(../images/icon2.png) -260px -450px;
+}
+.phone_number .text_wrap {
+    overflow: hidden;
+}
+.phone_number .text_wrap input {
+    display: block;
+    padding: 5px 8px 5px;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+}
+
+.modal_bd .pwd,
+.modal_bd .remember {
+    margin-top: 10px;
+}
+.modal_bd .pwd input {
+    width: 206px;
+    height: 19px;
+    margin: 0;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+}
+.modal_bd .remember label {
+
+}
+.modal_bd .remember input {
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.modal_bd .login_btn_wrap {
+    margin-top: 20px;
+}
+.modal_bd .login_btn {
+    display: inline-block;
+    padding: 0 5px 0 0;
+    width: 215px;
+    background: url(../images/button2.png) right -428px;
+}
+.modal_bd .login_btn span {
+    display: block;
+    background: url(../images/button2.png) 0 -387px;
+}
+.modal_bd .otherway {
+    padding: 0 20px;
+    height: 48px;
+    border-top: 1px solid #c6c6c6;
+    border-radius: 0 0 4px 4px;
+    line-height: 48px;
+    background-color: #f7f7f7;
+}
+.modal_bd .otherway a:hover {
+    text-decoration: none;
+}
+.modal_bd .otherway a.tologin {
+    color: #0c72c3;
+}
+.modal_bd .otherway a.toreg {
+    color: #999;
+}
+
+/*
+    注册
+ */
+
+.modal_bg  .register_cnt .reg_label {
+    color: #666;
+}
+
+.cpr_modal .know {
+    margin-top: 20px;
+    text-align: center;
+}
+.cpr_modal  a.know_btn{
+    display: inline-block;
+    padding: 0 5px 0 0;
+    height: 31px;
+    line-height: 31px;
+    background: url(../images/button2.png) right -428px;
+    color: #fff;
+}
+.cpr_modal  a.know_btn span {
+    display: block;
+    width: 75px;
+    background: url(../images/button2.png) 0 -387px;
+
+}
+.cpr_modal .info{
+    line-height: 24px;
+    font-size: 14px;
+    text-align: center;
+}
