@@ -1,6 +1,6 @@
 # music-wyy
 使用react+redux构建的网易云首页，个人学习交流作品
-技术：`react`+`react-router@2.8`+`redux`+`react-redux`+`webpack`+`axios`  
+技术栈：`react`+`react-router@2.8`+`redux`+`react-redux`+`webpack`+`axios`  
 ##在线访问
 [React——网易云音乐](http://music.rainycc.com)  
 推荐使用chrome浏览器  
