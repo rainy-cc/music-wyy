@@ -10,7 +10,7 @@ $ git clone git@github.com:ForeverCc/music-wyy.git
 $ npm install
 $ npm start
 ```
-浏览器访问localhost：3000（推荐使用chrome）
+浏览器访问localhost：3000（推荐使用chrome浏览器）
 ### 完成页面
 1. 首页 /
 2. 排行榜页面 /discover/toplist
