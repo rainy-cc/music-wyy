@@ -14,7 +14,6 @@ import {getRandomIndex}  from '../utils/util';
 import { scrollFn }  from '../utils/dom.js';
 import '../static/css/playbar.css';
 
-
 class PlayBar extends React.Component {
 
     constructor(){
@@ -73,6 +72,13 @@ class PlayBar extends React.Component {
             });
         };
 
+        //点击空白处 隐藏音量面板
+        document.onclick= (ev)=>{
+            this.setState({
+                //panelState: false, //是否显示播放列表panel
+                volbarState: false,//是否显示音量面板
+            });
+        };
     }
     //组件更新完成后判断当前播放状态来决定播放状态
     componentDidUpdate(prevProps,prevState){
@@ -90,6 +96,9 @@ class PlayBar extends React.Component {
         }else{
             this.musicPause();
         }
+    }
+    componentWillUnmount(){
+        document.onclick=null;
     }
     //点击修改播放状态
     changePlayState(){
@@ -116,7 +125,6 @@ class PlayBar extends React.Component {
         let index = this.props.currentMusic.index;
         let playlist = this.props.playlist;
         let mode = this.props.playMode;
-        //没有歌曲
         if(playlist.length == 0){
             return;
         }
@@ -263,7 +271,7 @@ class PlayBar extends React.Component {
     volumnDrag(ev){
         var _this = this;  //this的指向
         var disY = ev.clientY - _this.volumnBtn.offsetTop;
-        _this.volumnContainer.onmousemove  = function (ev) {
+        _this.volumnContainer.onmousemove = function (ev) {
             var top = ev.clientY - disY;
             //console.log(top);
             if(top<=-10){
@@ -276,7 +284,7 @@ class PlayBar extends React.Component {
                 volumnBtnPosy: top,
                 volumnHeight:_this.volumnBox.clientHeight - top -10
             });
-            _this.oAudio.volume = (_this.volumnBox.clientHeight - top -10)/100
+            _this.oAudio.volume = (_this.volumnBox.clientHeight - top -10)/100;
 
         };
         document.onmouseup = function () {
@@ -391,13 +399,13 @@ class PlayBar extends React.Component {
                             <a className="icon share" title="分享" href="javascript:;">分享</a>
                         </div>
                         <div className="pb_control fl">
-                            <a onClick={this.changeVolbarState.bind(this)} className="icon volume" title="音量" href="javascript:;">音量</a>
+                            <a onClick={ev=>{this.changeVolbarState();ev.nativeEvent.stopImmediatePropagation() }} className="icon volume" title="音量" href="javascript:;">音量</a>
                             <a onClick={this.changePlayMode} className={modeClass[mode].className} title={modeClass[mode].title} href="javascript:;">模式</a>
                             <div className="list_btn fl" onClick={this.changePanelState.bind(this)}>
                                 <div className="tip"></div>
                                 <span className="num">{this.props.playlist.length}</span>
                             </div>
-                            <div ref={(con)=>{this.volumnContainer = con;}} className="vol_bar" style={{display: this.state.volbarState?'block': 'none'}}>
+                            <div ref={(con)=>{this.volumnContainer = con;}} onClick={ev=>ev.nativeEvent.stopImmediatePropagation()} className="vol_bar" style={{display: this.state.volbarState?'block': 'none'}}>
                                     <div ref={(box)=>{this.volumnBox = box;}} className="vol_total">
                                         <div style={{height: this.state.volumnHeight+'px'}} className="vol_current"></div>
                                         <span ref={(btn)=>{this.volumnBtn = btn;}} onMouseDown={ev=>{
